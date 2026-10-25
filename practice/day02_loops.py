@@ -5,7 +5,8 @@ def even_or_odd(number):
     """Return a clear even/odd message for an integer, including zero/negatives."""
     if number % 2 == 0:
         return f"{number} is even."
-    return f"{number} is odd."
+    else:
+        return f"{number} is odd."
 
 
 def multiplication_table(number):

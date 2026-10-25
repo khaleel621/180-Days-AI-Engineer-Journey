@@ -42,10 +42,25 @@ def test_even_number_count_edge_cases():
     assert _day02.count_even_numbers([1, 3, 5]) == 0
 
 
+def test_multiplication_table_for_zero():
+    table_for_zero = _day02.multiplication_table(0)
+    assert len(table_for_zero) == 10
+    assert table_for_zero == [
+        f"0 x {multiplier} = {0 * multiplier}" for multiplier in range(1, 11)
+    ]
+
+
+def test_even_number_count_with_zero_and_negative_numbers():
+    assert _day02.count_even_numbers([0, -2, -3, -4, 5]) == 3
+    assert _day02.count_even_numbers([-12, -7, 0, 4]) == 3
+
+
 if __name__ == "__main__":
     test_even_and_odd_integers()
     test_zero_and_negative_integers()
     test_multiplication_tables_for_different_inputs()
+    test_multiplication_table_for_zero()
     test_even_number_count_for_given_list()
     test_even_number_count_edge_cases()
+    test_even_number_count_with_zero_and_negative_numbers()
     print("All Day 2 conditions and loops tests passed!")
