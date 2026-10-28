@@ -1,26 +1,56 @@
 # Data Structures & Algorithms
 
-This folder contains DSA practice exercises from the AI Engineer Journey.
+This folder contains algorithm- and data-structure-focused practice from the AI Engineer Journey. Python syntax lessons remain in `../01-python-fundamentals/`.
 
-## Completed Exercises
+Exercises are organized by topic (for example, `arrays/`). Tests are kept beside the code they cover.
 
-| Exercise | File | Date | Status |
-|----------|------|------|--------|
-| Two Sum (Nested Loop) | `arrays/two-sum.py` | 2026-10-20 | Completed |
-| Count Even Numbers | `../practice/day02_loops.py` | 2026-10-25 | Completed |
+## File Inventory
 
-### Two Sum
-- Practiced using nested loops
-- Used list indexing, `range()`, `if` conditions, and `break`
-- Practiced tracing code and debugging
-- Successfully wrote the nested-loop solution without looking at the code
+| Exercise | File | Concept practiced | Status |
+|----------|------|-------------------|--------|
+| Two Sum (nested loop / brute force) | `arrays/two-sum.py` | Arrays, list indexing, nested loops, `range()`, `if`, `break`, boolean flag, O(n²) time, O(1) extra space | Completed — verified |
+| Two Sum tests | `arrays/day01_test_two_sum.py` | Tests for `two_sum()` | Passes |
+| Strings (`len()` example) | `arrays/day03-strings.py` | `len()` on a string | Example only (not a full exercise) |
+| Even or Odd | `day_02-even-odd.py` | `%` modulus, `if`/`else`, zero and negative handling | Implemented — verified |
+| Count Even Numbers tests | `arrays/test_count_even_numbers.py` | References `count-even-numbers.py` | Test present; solution missing |
 
-### Count Even Numbers
-- Used a `for` loop and an `if` condition to check each value with `% 2`
-- Increased a counter initialized to zero for each even value
-- Counted the provided list as 4 even numbers
-- Time complexity: O(n); extra space: O(1)
+## Details
 
-## Planned — Not Started
+### Two Sum — `arrays/two-sum.py`
 
-No additional DSA exercises planned yet.
+Finds two indices whose values add up to a target using a nested-loop brute-force approach. Returns a tuple `(i, j)` or `None` when no pair exists.
+
+Example: `two_sum([2, 7, 11, 15], 9)` returns `(0, 1)`.
+
+### Even or Odd — `day_02-even-odd.py`
+
+`even_or_odd(number)` returns `"{number} is even."` when `number % 2 == 0`, otherwise `"{number} is odd."`. Handles zero and negative integers.
+
+Verified: `even_or_odd(8)` → `8 is even.`, `even_or_odd(7)` → `7 is odd.`, `even_or_odd(0)` → `0 is even.`, `even_or_odd(-3)` → `-3 is odd.`
+
+### Strings — `arrays/day03-strings.py`
+
+A minimal example: `word = "COMPUTER"; print(len(word))`. Not a complete exercise with functions or tests.
+
+### Count Even Numbers — `arrays/test_count_even_numbers.py`
+
+This test file loads `count-even-numbers.py`, but that solution file is **no longer present** in the repository (it was removed during reorganization). The test cannot run until the solution file is restored or the reference is corrected. Previously it counted even values in one list traversal: O(n) time, O(1) extra space.
+
+## Files Not Present
+
+The following files are referenced in older notes but do **not** currently exist:
+
+* `arrays/count-even-numbers.py` — solution file missing
+* `arrays/test_two_sum.py` — replaced by `arrays/day01_test_two_sum.py`
+
+## How to Run
+
+From the repository root:
+
+```bash
+python 02-data-structures-algorithms/arrays/two-sum.py
+python 02-data-structures-algorithms/day_02-even-odd.py
+python 02-data-structures-algorithms/arrays/day01_test_two_sum.py
+```
+
+`day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
