@@ -65,6 +65,22 @@
 - [ ] Classification report (precision, recall, F1-score)
 - [ ] Model evaluation verification
 
+## Day 5 — 2026-10-28: Python Functions + DSA Counting Occurrences
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Add Two Numbers | Completed — verified | `add_numbers(a, b)` in `01-python-fundamentals/day05-functions.py`. Defines with `def`, takes two numeric parameters, returns their sum without printing inside the function, includes basic numeric input validation. Demo prints `Sum: 30` for 10 and 20. Verified: `test_day05_functions.py` passes (10+20=30, 0+0=0, -5+2=-3). |
+| Count Occurrences (DSA) | Completed — verified | `count_occurrences(numbers, target)` in `02-data-structures-algorithms/arrays/day05-count-occurrences.py`. Initializes a counter to zero, uses a `for` loop, increments on a match, returns the count; no `.count()` or `collections.Counter`. Handles empty lists and absent targets (0). Demo prints `2 appears 3 times` for `[2, 5, 2, 8, 2, 10, 5]` with target `2`. Complexity: O(n) time, O(1) extra space. Verified: `test_day05_count_occurrences.py` passes (all 5 cases). |
+
+### Concepts Learned
+
+- [x] Defining functions with `def` and calling them
+- [x] Parameters and arguments
+- [x] `return` values vs `print()` output
+- [x] Basic input validation (`isinstance` check)
+- [x] Linear scan with an initialized counter
+- [x] Time complexity O(n) and auxiliary space O(1)
+
 ## Upcoming / Planned
 
 | Exercise | Status | Notes |
@@ -76,8 +92,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress |
-| `02-data-structures-algorithms` | In Progress |
+| `01-python-fundamentals` | In Progress (Day 5 complete) |
+| `02-data-structures-algorithms` | In Progress (Day 5 complete) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
