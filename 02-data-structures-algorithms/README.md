@@ -13,7 +13,9 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Strings (`len()` example) | `arrays/day03-strings.py` | `len()` on a string | Example only (not a full exercise) |
 | Even or Odd | `day_02-even-odd.py` | `%` modulus, `if`/`else`, zero and negative handling | Implemented — verified |
 | Count occurrences (DSA) | `arrays/day05-count-occurrences.py` | Linear scan with a counter; O(n) time, O(1) extra space | Completed — verified |
+| Frequency counting and duplicate detection (DSA) | `arrays/day06-frequency-and-duplicates.py` | `count_frequency()` with dictionary + loop, sets for unique values, `find_duplicates()` with sets; O(n) time, O(k) extra space | Completed — verified |
 | Count Even Numbers tests | `arrays/test_count_even_numbers.py` | References `count-even-numbers.py` | Test present; solution missing |
+| Frequency and duplicate tests | `arrays/test_day06-frequency-and-duplicates.py` | Tests for `count_frequency()` and `find_duplicates()` | Passes |
 
 ## Details
 
@@ -64,8 +66,10 @@ From the repository root:
 python 02-data-structures-algorithms/arrays/two-sum.py
 python 02-data-structures-algorithms/day_02-even-odd.py
 python 02-data-structures-algorithms/arrays/day05-count-occurrences.py
+python 02-data-structures-algorithms/arrays/day06-frequency-and-duplicates.py
 python 02-data-structures-algorithms/arrays/day01_test_two_sum.py
 python 02-data-structures-algorithms/arrays/test_day05_count_occurrences.py
+python 02-data-structures-algorithms/arrays/test_day06-frequency-and-duplicates.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

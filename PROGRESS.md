@@ -81,6 +81,24 @@
 - [x] Linear scan with an initialized counter
 - [x] Time complexity O(n) and auxiliary space O(1)
 
+## Day 6 — 2026-10-29: Dictionaries, Sets, Frequency Counting, and Duplicate Detection
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Student Marks Dictionary | Completed — verified | Dictionary access, add, update, and loop in `01-python-fundamentals/day06-dictionaries.py`. Verified: `test_day06_dictionaries.py` passes (5 tests: access, add, update, missing student, loop). |
+| Count Frequencies | Completed — verified | `count_frequency(numbers)` in `02-data-structures-algorithms/arrays/day06-frequency-and-duplicates.py`. Loop + dictionary, no `list.count()` or `collections.Counter`. Handles empty list and negative/zero values. Verified: tests pass. |
+| Understand Sets | Completed — verified | `set()` keeps only unique values; display order is not guaranteed. Demonstrated in `day06-frequency-and-duplicates.py`. |
+| Detect Duplicates | Completed — verified | `find_duplicates(numbers)` in `02-data-structures-algorithms/arrays/day06-frequency-and-duplicates.py`. Loop + sets; each duplicate appears once, in order of first repeated detection. Handles empty list, unique-only input, all-same input, multiple duplicates, negatives, and zero. Verified: tests pass (10 cases). |
+
+### Concepts Learned
+
+- [x] Dictionary key/value pairs, access by key, add, update, `.items()` iteration
+- [x] Frequency counting with a dictionary and one loop
+- [x] Sets store unique values; sets are unordered
+- [x] Duplicate detection with `seen` and `already_recorded` sets
+- [x] `list.count()` and `collections.Counter` intentionally not used
+- [x] O(n) time and O(k) auxiliary space for counting and duplicate detection
+
 ## Upcoming / Planned
 
 | Exercise | Status | Notes |
@@ -92,8 +110,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 5 complete) |
-| `02-data-structures-algorithms` | In Progress (Day 5 complete) |
+| `01-python-fundamentals` | In Progress (Day 6 complete) |
+| `02-data-structures-algorithms` | In Progress (Day 6 complete) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

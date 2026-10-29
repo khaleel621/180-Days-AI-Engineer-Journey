@@ -11,6 +11,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Student Marks Analysis | `01-student-marks-analysis.py` | Dictionary storage and iteration, average calculation, topper identification, pass/fail counting, f-strings. Also defines the `Student` and `MarksBook` OOP classes (`__init__`, `self`) with edge-case and invalid-input handling. |
 | Multiplication Table | `03-multiplication-table.py` | `for` loops, `range(1, 11)`, functions, and user input. Prints a multiplication table from 1 to 10 for a given integer. |
 | Day 5: Functions | `day05-functions.py` | Defining functions with `def`, parameters, `return` values, `print()` vs `return`, calling a function, and basic input validation. Exercise: `add_numbers(a, b)` returns the sum (example: 10 + 20 = 30). |
+| Day 6: Dictionaries | `day06-dictionaries.py` | Dictionaries: student names mapped to marks; access a student's marks, add a new student, update existing marks, and loop through names and marks with `.items()`. |
 
 ## How to Run Each Exercise
 
@@ -20,6 +21,7 @@ From the repository root:
 python 01-python-fundamentals/01-student-marks-analysis.py
 python 01-python-fundamentals/03-multiplication-table.py
 python 01-python-fundamentals/day05-functions.py
+python 01-python-fundamentals/day06-dictionaries.py
 ```
 
 `03-multiplication-table.py` prompts for an integer and prints its multiplication table from 1 to 10.
@@ -34,6 +36,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_student_marks_oop.py` | `Student` and `MarksBook` OOP classes | `python 01-python-fundamentals/test_student_marks_oop.py` | Passes |
 | `test_day02-conditions-loops.py` | Conditions and loops practice | `python 01-python-fundamentals/test_day02-conditions-loops.py` | Errors (see below) |
 | `test_day05_functions.py` | `add_numbers()` in `day05-functions.py` | `python 01-python-fundamentals/test_day05_functions.py` | Passes |
+| `test_day06_dictionaries.py` | Dictionary demo in `day06-dictionaries.py` | `python 01-python-fundamentals/test_day06_dictionaries.py` | Passes |
 
 ### Important: `test_day02-conditions-loops.py` references a missing file
 
