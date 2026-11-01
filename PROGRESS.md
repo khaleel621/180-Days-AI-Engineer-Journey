@@ -99,6 +99,22 @@
 - [x] `list.count()` and `collections.Counter` intentionally not used
 - [x] O(n) time and O(k) auxiliary space for counting and duplicate detection
 
+## Day 7 — 2026-11-01: Linear Search, Binary Search, and Time Complexity
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Linear Search | Completed — verified | `linear_search(numbers, target)` in `02-data-structures-algorithms/arrays/day07-linear-search.py`. Uses a `for` loop, checks each element one by one, returns the index if found and `-1` otherwise. Works on sorted or unsorted lists. Demo prints `30 found at index 2` for `[10, 20, 30, 40, 50]` with target `30`. Verified: `test_day07-linear-search.py` passes (7 tests). |
+| Binary Search | Completed — verified | `binary_search(numbers, target)` in `02-data-structures-algorithms/arrays/day07-binary-search.py`. Requires a sorted list; uses `low`, `high`, `mid = (low + high) // 2` and a `while` loop; returns the index if found and `-1` otherwise. Demo prints `50 found at index 4` for `[10, 20, 30, 40, 50, 60, 70]` with target `50`. Verified: `test_day07-binary-search.py` passes (9 tests). |
+| Search Comparison | Completed — verified | Beginner-friendly comparison in `02-data-structures-algorithms/arrays/day07-search-comparison.md`: how each algorithm works, why binary search requires sorted data, time complexity, and a best/average/worst case table. |
+
+### Concepts Learned
+
+- [x] Linear search: one `for` loop, check each element, return index or `-1`; O(n) time, O(1) extra space.
+- [x] Binary search: `low`, `high`, `mid`, `while low <= high`, halve the range each step; O(log n) time, O(1) extra space.
+- [x] Binary search requires sorted data; linear search does not.
+- [x] Best case O(1) for both; average/worst O(n) for linear, O(log n) for binary.
+- [x] Time complexity introduction: best, average, and worst case.
+
 ## Upcoming / Planned
 
 | Exercise | Status | Notes |
@@ -110,8 +126,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 6 complete) |
-| `02-data-structures-algorithms` | In Progress (Day 6 complete) |
+| `01-python-fundamentals` | In Progress (Day 7 complete) |
+| `02-data-structures-algorithms` | In Progress (Day 7 complete) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
