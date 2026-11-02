@@ -115,6 +115,22 @@
 - [x] Best case O(1) for both; average/worst O(n) for linear, O(log n) for binary.
 - [x] Time complexity introduction: best, average, and worst case.
 
+## Day 8 — 2026-11-02: Sorting Algorithms — Bubble Sort and Selection Sort
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Bubble Sort | Completed — verified | `bubble_sort(numbers)` in `02-data-structures-algorithms/arrays/day08-bubble-sort.py`. Uses nested loops, compares adjacent elements, swaps when in wrong order. Optimized with a swap flag to stop early if no swaps occur (best case O(n)). Returns a new sorted list; the original list is not modified. Demo: `[5, 3, 8, 1, 2]` → `[1, 2, 3, 5, 8]`. Verified: `test_day08-bubble-sort.py` passes (9 tests). |
+| Selection Sort | Completed — verified | `selection_sort(numbers)` in `02-data-structures-algorithms/arrays/day08-selection-sort.py`. Finds the smallest element in the unsorted section and swaps it into the correct position at the boundary. Returns a new sorted list; the original list is not modified. Demo: `[64, 25, 12, 22, 11]` → `[11, 12, 22, 25, 64]`. Verified: `test_day08-selection-sort.py` passes (9 tests). |
+| Sorting Comparison | Completed — verified | Beginner-friendly comparison in `02-data-structures-algorithms/arrays/day08-sorting-comparison.md`: what sorting means, how bubble sort works, how selection sort works, key differences, why sorting is useful, and a best/average/worst case time complexity table. |
+
+### Concepts Learned
+
+- [x] Bubble sort: nested loops, adjacent element comparison, swapping, O(n²) average/worst, O(n) best with early-exit optimization.
+- [x] Selection sort: find minimum in unsorted section, swap into boundary position, O(n²) for all cases, at most n−1 swaps.
+- [x] Both algorithms return a new sorted list without modifying the original.
+- [x] Time complexity table: best/average/worst case for both algorithms.
+- [x] Writing automated tests for edge cases: empty list, single element, duplicates, negatives, zeros, already sorted, reverse sorted.
+
 ## Upcoming / Planned
 
 | Exercise | Status | Notes |

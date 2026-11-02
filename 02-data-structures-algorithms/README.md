@@ -21,6 +21,11 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Search comparison (Day 7) | `arrays/day07-search-comparison.md` | Linear vs binary search, sorted-data requirement, best/average/worst case table | Completed — verified |
 | Linear search tests | `arrays/test_day07-linear-search.py` | Tests for `linear_search()` | Passes |
 | Binary search tests | `arrays/test_day07-binary-search.py` | Tests for `binary_search()`, including even/odd-length lists | Passes |
+| Bubble sort (Day 8) | `arrays/day08-bubble-sort.py` | Optimized bubble sort with swap flag; compares adjacent elements and swaps; O(n) best / O(n²) average / O(n²) worst; returns a new sorted list | Completed — verified |
+| Selection sort (Day 8) | `arrays/day08-selection-sort.py` | Selection sort: finds minimum in unsorted section, swaps into place; O(n²) best / O(n²) average / O(n²) worst; returns a new sorted list | Completed — verified |
+| Bubble sort tests | `arrays/test_day08-bubble-sort.py` | Tests for `bubble_sort()` | Passes |
+| Selection sort tests | `arrays/test_day08-selection-sort.py` | Tests for `selection_sort()` | Passes |
+| Sorting comparison (Day 8) | `arrays/day08-sorting-comparison.md` | Bubble sort vs selection sort, how each works, comparison table, why sorting is useful | Completed — verified |
 
 ## Details
 
@@ -111,6 +116,10 @@ python 02-data-structures-algorithms/arrays/test_day05_count_occurrences.py
 python 02-data-structures-algorithms/arrays/test_day06-frequency-and-duplicates.py
 python 02-data-structures-algorithms/arrays/test_day07-linear-search.py
 python 02-data-structures-algorithms/arrays/test_day07-binary-search.py
+python 02-data-structures-algorithms/arrays/day08-bubble-sort.py
+python 02-data-structures-algorithms/arrays/day08-selection-sort.py
+python 02-data-structures-algorithms/arrays/test_day08-bubble-sort.py
+python 02-data-structures-algorithms/arrays/test_day08-selection-sort.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
