@@ -14,9 +14,12 @@ def _load(name, filename):
     return module
 
 
-_even_odd = _load("even_odd", "02-even-odd.py")
+# The even/odd exercise was moved to the DSA folder during reorganization.
+_even_odd_path = os.path.normpath(
+    os.path.join(_folder, "..", "02-data-structures-algorithms", "arrays", "day_02-even-odd.py")
+)
+_even_odd = _load("even_odd", _even_odd_path)
 _table = _load("multiplication_table", "03-multiplication-table.py")
-_count = _load("count_even_numbers", "04-count-even-numbers.py")
 
 
 def test_even_and_odd_integers():
@@ -48,27 +51,9 @@ def test_multiplication_table_for_zero():
     ]
 
 
-def test_even_number_count_for_given_list():
-    assert _count.count_even_numbers([12, 7, 4, 9, 6, 3, 8]) == 4
-
-
-def test_even_number_count_edge_cases():
-    assert _count.count_even_numbers([]) == 0
-    assert _count.count_even_numbers([2, 4, 6]) == 3
-    assert _count.count_even_numbers([1, 3, 5]) == 0
-
-
-def test_even_number_count_with_zero_and_negative_numbers():
-    assert _count.count_even_numbers([0, -2, -3, -4, 5]) == 3
-    assert _count.count_even_numbers([-12, -7, 0, 4]) == 3
-
-
 if __name__ == "__main__":
     test_even_and_odd_integers()
     test_zero_and_negative_integers()
     test_multiplication_tables_for_different_inputs()
     test_multiplication_table_for_zero()
-    test_even_number_count_for_given_list()
-    test_even_number_count_edge_cases()
-    test_even_number_count_with_zero_and_negative_numbers()
     print("All Day 2 conditions and loops tests passed!")

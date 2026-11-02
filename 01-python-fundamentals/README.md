@@ -34,13 +34,9 @@ Tests live beside the exercises they cover and run directly with Python:
 |-----------|--------|------------|--------|
 | `test_student_marks.py` | Dictionary-based Student Marks Analysis | `python 01-python-fundamentals/test_student_marks.py` | Passes |
 | `test_student_marks_oop.py` | `Student` and `MarksBook` OOP classes | `python 01-python-fundamentals/test_student_marks_oop.py` | Passes |
-| `test_day02-conditions-loops.py` | Conditions and loops practice | `python 01-python-fundamentals/test_day02-conditions-loops.py` | Errors (see below) |
+| `test_day02-conditions-loops.py` | Conditions and loops practice | `python 01-python-fundamentals/test_day02-conditions-loops.py` | Passes |
 | `test_day05_functions.py` | `add_numbers()` in `day05-functions.py` | `python 01-python-fundamentals/test_day05_functions.py` | Passes |
 | `test_day06_dictionaries.py` | Dictionary demo in `day06-dictionaries.py` | `python 01-python-fundamentals/test_day06_dictionaries.py` | Passes |
-
-### Important: `test_day02-conditions-loops.py` references a missing file
-
-`test_day02-conditions-loops.py` loads `02-even-odd.py`, but that file is **no longer in this folder**. The even/odd exercise now lives in the DSA folder as `02-data-structures-algorithms/day_02-even-odd.py`. Because of this move, `test_day02-conditions-loops.py` raises `FileNotFoundError` until its reference is updated. The multiplication-table portion of the exercise (`03-multiplication-table.py`) still works and is covered by the same test file.
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -50,7 +46,6 @@ This folder is for **Python language syntax practice**. Algorithmic problem-solv
 
 The following files are referenced in older notes but do **not** currently exist in this folder:
 
-* `02-even-odd.py` — moved to `02-data-structures-algorithms/day_02-even-odd.py`
 * `04-count-even-numbers.py` — no longer present
 * `student-marks-input-practice.py` — not present
 * `day04-strings.py` — not present

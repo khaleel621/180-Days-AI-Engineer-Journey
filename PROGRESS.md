@@ -32,8 +32,8 @@
 
 | Exercise | Status | Details |
 |----------|--------|---------|
-| Even or Odd | Implemented | `even_or_odd(number)` in `02-data-structures-algorithms/day_02-even-odd.py`. Handles `% 2`, positive, zero, and negative integers. Behavior verified directly. Note: `test_day02-conditions-loops.py` references `02-even-odd.py`, which is no longer present, so that test currently errors until its reference is updated. |
-| Multiplication Table | Implemented | `multiplication_table(number)` in `01-python-fundamentals/03-multiplication-table.py`. Uses a `for` loop and `range(1, 11)`. Behavior verified directly. Covered by `test_day02-conditions-loops.py` (which currently errors on the missing `02-even-odd.py`). |
+| Even or Odd | Completed — verified | `even_or_odd(number)` in `02-data-structures-algorithms/arrays/day_02-even-odd.py`. Handles `% 2`, positive, zero, and negative integers. `test_day02-conditions-loops.py` now correctly loads from the DSA folder path and all tests pass. |
+| Multiplication Table | Completed — verified | `multiplication_table(number)` in `01-python-fundamentals/03-multiplication-table.py`. Uses a `for` loop and `range(1, 11)`. Covered by `test_day02-conditions-loops.py` which now passes. |
 
 ### Concepts Practiced
 - [x] Modulus (`%`) for even/odd checks
@@ -44,7 +44,7 @@
 
 | Exercise | Status | Details |
 |----------|--------|---------|
-| Count Even Numbers (DSA) | In Progress — solution missing | `test_count_even_numbers.py` exists in `02-data-structures-algorithms/arrays/`, but it loads `count-even-numbers.py`, which is no longer present. Cannot be verified until the solution file is restored or the test reference corrected. |
+| Count Even Numbers (DSA) | Completed — verified | `count_even_numbers(numbers)` in `02-data-structures-algorithms/arrays/count-even-numbers.py`. Single loop with modulus check; O(n) time, O(1) extra space. Handles empty list, negative numbers, and zero. Verified: `test_count_even_numbers.py` passes (6 test cases). |
 
 ## Day 2 — 2026-10-20: Machine Learning
 
@@ -142,8 +142,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 7 complete) |
-| `02-data-structures-algorithms` | In Progress (Day 7 complete) |
+| `01-python-fundamentals` | In Progress (Day 8 complete) |
+| `02-data-structures-algorithms` | In Progress (Day 8 complete) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

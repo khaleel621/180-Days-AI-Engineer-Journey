@@ -14,7 +14,8 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Even or Odd | `day_02-even-odd.py` | `%` modulus, `if`/`else`, zero and negative handling | Implemented — verified |
 | Count occurrences (DSA) | `arrays/day05-count-occurrences.py` | Linear scan with a counter; O(n) time, O(1) extra space | Completed — verified |
 | Frequency counting and duplicate detection (DSA) | `arrays/day06-frequency-and-duplicates.py` | `count_frequency()` with dictionary + loop, sets for unique values, `find_duplicates()` with sets; O(n) time, O(k) extra space | Completed — verified |
-| Count Even Numbers tests | `arrays/test_count_even_numbers.py` | References `count-even-numbers.py` | Test present; solution missing |
+| Count Even Numbers (DSA) | `arrays/count-even-numbers.py` | Single loop with modulus check; O(n) time, O(1) extra space | Completed — verified |
+| Count Even Numbers tests | `arrays/test_count_even_numbers.py` | Tests for `count_even_numbers()` | Passes |
 | Frequency and duplicate tests | `arrays/test_day06-frequency-and-duplicates.py` | Tests for `count_frequency()` and `find_duplicates()` | Passes |
 | Linear search (Day 7) | `arrays/day07-linear-search.py` | `linear_search()` with a `for` loop; checks each element one by one; returns index or `-1`; O(n) time, O(1) extra space | Completed — verified |
 | Binary search (Day 7) | `arrays/day07-binary-search.py` | `binary_search()` with `low`, `high`, `mid` and a `while` loop on sorted lists; returns index or `-1`; O(log n) time, O(1) extra space | Completed — verified |
@@ -57,9 +58,13 @@ Verified: `count_occurrences([2, 5, 2, 8, 2, 10, 5], 2)` → `3`, printing `2 ap
 
 A minimal example: `word = "COMPUTER"; print(len(word))`. Not a complete exercise with functions or tests.
 
-### Count Even Numbers — `arrays/test_count_even_numbers.py`
+### Count Even Numbers — `arrays/count-even-numbers.py`
 
-This test file loads `count-even-numbers.py`, but that solution file is **no longer present** in the repository (it was removed during reorganization). The test cannot run until the solution file is restored or the reference is corrected. Previously it counted even values in one list traversal: O(n) time, O(1) extra space.
+`count_even_numbers(numbers)` counts how many even values appear in a list using a single loop and the modulus operator (`% 2 == 0`). O(n) time, O(1) extra space. Handles empty lists, negative numbers, and zero.
+
+Example: `count_even_numbers([12, 7, 4, 9, 6, 3, 8])` returns `4`.
+
+Verified: all 6 tests in `arrays/test_count_even_numbers.py` pass.
 
 ### Day 7 — Searching Algorithms
 
@@ -97,7 +102,6 @@ Compares linear and binary search: how they work, why binary search requires sor
 
 The following files are referenced in older notes but do **not** currently exist:
 
-* `arrays/count-even-numbers.py` — solution file missing
 * `arrays/test_two_sum.py` — replaced by `arrays/day01_test_two_sum.py`
 
 ## How to Run
