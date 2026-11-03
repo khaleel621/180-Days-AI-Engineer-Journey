@@ -41,3 +41,17 @@ The Iris model evaluation script ran successfully in a verification session on 2
 ```bash
 python iris-classification-evaluation.py
 ```
+
+### Learner Review Exercise (Personal Review — Pending)
+
+Before marking this exercise complete, personally review and answer the following using the **actual output** from running the script:
+
+1. **Test accuracy:** What is the test accuracy shown in the output? What fraction of the 30 test samples were predicted correctly?
+2. **Confusion matrix diagonal:** Look at the diagonal cells (top-left to bottom-right). What do these numbers represent? How many correct predictions does each class have?
+3. **Lowest recall class:** Which class (setosa, versicolor, or virginica) has the lowest recall value? What does low recall mean for that class?
+4. **Meaning of support:** In the classification report, what does the "support" column represent for each class? Does the support add up to the total test set size?
+5. **Why accuracy alone may be insufficient:** If accuracy is 100% (all correct), could there still be a problem the model has with a specific class? When would precision or recall matter more than accuracy?
+
+**Important:** You must supply your own answers to these questions. The assistant cannot claim you have reviewed or understood the metrics unless you have provided your responses.
+
+Until your personal review is complete, this exercise remains **In Progress**. Do not mark Day 3 complete or start it.

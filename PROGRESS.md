@@ -131,6 +131,36 @@
 - [x] Time complexity table: best/average/worst case for both algorithms.
 - [x] Writing automated tests for edge cases: empty list, single element, duplicates, negatives, zeros, already sorted, reverse sorted.
 
+## Day 9 — 2026-11-03: Python List Comprehensions + DSA Best Time to Buy and Sell Stock
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| square_numbers(numbers) | Files created; tests pass | `square_numbers(numbers)` in `01-python-fundamentals/day09-list-comprehensions.py`. Uses a list comprehension `[x * x for x in numbers]` to return a new list of squares. Original list is not modified. Verified: `test_day09_list_comprehensions.py` passes (8 tests). |
+| filter_even_numbers(numbers) | Files created; tests pass | `filter_even_numbers(numbers)` in `01-python-fundamentals/day09-list-comprehensions.py`. Uses a list comprehension with `if` condition `[x for x in numbers if x % 2 == 0]` to return only even numbers. Original list is not modified. Verified: `test_day09_list_comprehensions.py` passes (8 tests). |
+| Best Time to Buy and Sell Stock (max_profit) | Files created; tests pass | `max_profit(prices)` in `02-data-structures-algorithms/arrays/day09-best-time-to-buy-and-sell-stock.py`. Single-pass algorithm tracking `minimum_price` and `maximum_profit`. O(n) time, O(1) extra space. Verified: `test_day09_best_time_to_buy_and_sell_stock.py` passes (11 tests). |
+
+### Concepts Learned — Python Day 9
+
+- [ ] List comprehensions: `[expression for item in iterable if condition]`
+- [ ] `square_numbers()` — transform each element with a comprehension
+- [ ] `filter_even_numbers()` — filter with an `if` condition in a comprehension
+- [ ] `map()` and `filter()` intentionally not used
+- [ ] Input list not modified — a new list is returned
+
+### Concepts Learned — DSA Day 9
+
+- [ ] Single-pass maximum profit: track `minimum_price` and `maximum_profit`
+- [ ] Buy day must be before sell day — only earlier prices are considered for buying
+- [ ] Minimum price updated during traversal to unlock future profits
+- [ ] Time complexity: O(n); extra space complexity: O(1)
+- [ ] No nested loops or sorting used
+
+### Learner Practice Status
+
+- Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 9 stock profit: Implementation and tests created and verified. **Learner practice pending.**
+- AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
+
 ## Upcoming / Planned
 
 | Exercise | Status | Notes |
@@ -142,8 +172,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 8 complete) |
-| `02-data-structures-algorithms` | In Progress (Day 8 complete) |
+| `01-python-fundamentals` | In Progress (Day 9 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 9 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
