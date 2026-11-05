@@ -28,7 +28,9 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Selection sort tests | `arrays/test_day08-selection-sort.py` | Tests for `selection_sort()` | Passes |
 | Sorting comparison (Day 8) | `arrays/day08-sorting-comparison.md` | Bubble sort vs selection sort, how each works, comparison table, why sorting is useful | Completed — verified |
 | Best Time to Buy and Sell Stock (Day 9) | `arrays/day09-best-time-to-buy-and-sell-stock.py` | Single-pass maximum profit: track `minimum_price` and `maximum_profit`; O(n) time, O(1) extra space; no nested loops or sorting | Files created; tests pass |
+| Contains Duplicate (Day 10) | `arrays/day10-contains-duplicate.py` | Duplicate detection using a set; O(n) time, O(n) extra space | Files created; tests pass |
 | Best Time to Buy and Sell Stock tests | `arrays/test_day09_best_time_to_buy_and_sell_stock.py` | Tests for `max_profit()` covering all examples and edge cases | Passes |
+| Contains Duplicate tests | `arrays/test_day10_contains_duplicate.py` | Tests for `contains_duplicate()` covering duplicates, no duplicates, empty, single element, negatives, repeats, larger input | Passes |
 
 ## Details
 
@@ -128,6 +130,8 @@ python 02-data-structures-algorithms/arrays/test_day08-bubble-sort.py
 python 02-data-structures-algorithms/arrays/test_day08-selection-sort.py
 python 02-data-structures-algorithms/arrays/day09-best-time-to-buy-and-sell-stock.py
 python 02-data-structures-algorithms/arrays/test_day09_best_time_to_buy_and_sell_stock.py
+python 02-data-structures-algorithms/arrays/day10-contains-duplicate.py
+python 02-data-structures-algorithms/arrays/test_day10_contains_duplicate.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

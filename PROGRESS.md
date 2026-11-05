@@ -161,6 +161,41 @@
 - DSA Day 9 stock profit: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
+## Day 10 — 2026-11-05: Python Tuples and Sets + DSA Contains Duplicate
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| tuple_information(items) | Files created; tests pass | `tuple_information(items)` in `01-python-fundamentals/day10-tuples-and-sets.py`. Returns count, first, last elements. Handles empty tuple safely. Verified: `test_day10_tuples_and_sets.py` passes (7 tests). |
+| remove_duplicates(numbers) | Files created; tests pass | `remove_duplicates(numbers)` in `01-python-fundamentals/day10-tuples-and-sets.py`. Uses a set to remove duplicates. Original input not modified. Verified: `test_day10_tuples_and_sets.py` passes (7 tests). |
+| contains_duplicate(numbers) | Files created; tests pass | `contains_duplicate(numbers)` in `02-data-structures-algorithms/arrays/day10-contains-duplicate.py`. Set-based duplicate detection. O(n) time, O(n) extra space. Verified: `test_day10_contains_duplicate.py` passes (9 tests). |
+
+### Concepts Learned — Python Day 10
+
+- [ ] Tuples: ordered, immutable collections created with `()`
+- [ ] Tuple indexing: positive (from 0) and negative (from -1)
+- [ ] Immutability: tuples cannot be modified after creation
+- [ ] Sets: unordered collections of unique values created with `{}` or `set()`
+- [ ] Set operations: add, remove, discard, pop, union, intersection, difference, symmetric difference
+- [ ] Sets do not guarantee original ordering
+- [ ] `tuple_information(items)` — count, first, last; empty tuple handled safely
+- [ ] `remove_duplicates(numbers)` — set-based dedup, input not modified
+
+### Concepts Learned — DSA Day 10
+
+- [ ] Contains Duplicate: detect if any value appears at least twice
+- [ ] Set-based approach: check membership in a set while iterating
+- [ ] A set stores only unique values
+- [ ] Time complexity: O(n) — one pass through the list
+- [ ] Extra space complexity: O(n) — the set may store up to n elements
+
+### Learner Practice Status
+
+- Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 9 stock profit: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 10 tuples and sets: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 10 contains duplicate: Implementation and tests created and verified. **Learner practice pending.**
+- AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
+
 ## Upcoming / Planned
 
 | Exercise | Status | Notes |
@@ -172,8 +207,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 9 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 9 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 10 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 10 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

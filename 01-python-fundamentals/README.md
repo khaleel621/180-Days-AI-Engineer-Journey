@@ -13,6 +13,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 5: Functions | `day05-functions.py` | Defining functions with `def`, parameters, `return` values, `print()` vs `return`, calling a function, and basic input validation. Exercise: `add_numbers(a, b)` returns the sum (example: 10 + 20 = 30). |
 | Day 6: Dictionaries | `day06-dictionaries.py` | Dictionaries: student names mapped to marks; access a student's marks, add a new student, update existing marks, and loop through names and marks with `.items()`. |
 | Day 9: List Comprehensions | `day09-list-comprehensions.py` | List comprehensions: `square_numbers(numbers)` returns squares via `[x * x for x in numbers]`; `filter_even_numbers(numbers)` returns even values via `[x for x in numbers if x % 2 == 0]`. Original list is not modified. No `map()` or `filter()` used. |
+| Day 10: Tuples and Sets | `day10-tuples-and-sets.py` | Tuples: ordered, immutable collections with indexing. Sets: unordered collections of unique values with add/remove and set operations. Includes `tuple_information(items)` and `remove_duplicates(numbers)` exercises. |
 
 ## How to Run Each Exercise
 
@@ -24,6 +25,7 @@ python 01-python-fundamentals/03-multiplication-table.py
 python 01-python-fundamentals/day05-functions.py
 python 01-python-fundamentals/day06-dictionaries.py
 python 01-python-fundamentals/day09-list-comprehensions.py
+python 01-python-fundamentals/day10-tuples-and-sets.py
 ```
 
 `03-multiplication-table.py` prompts for an integer and prints its multiplication table from 1 to 10.
@@ -40,6 +42,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day05_functions.py` | `add_numbers()` in `day05-functions.py` | `python 01-python-fundamentals/test_day05_functions.py` | Passes |
 | `test_day06_dictionaries.py` | Dictionary demo in `day06-dictionaries.py` | `python 01-python-fundamentals/test_day06_dictionaries.py` | Passes |
 | `test_day09_list_comprehensions.py` | `square_numbers()` and `filter_even_numbers()` in `day09-list-comprehensions.py` | `python 01-python-fundamentals/test_day09_list_comprehensions.py` | Passes |
+| `test_day10_tuples_and_sets.py` | `tuple_information()` and `remove_duplicates()` in `day10-tuples-and-sets.py` | `python 01-python-fundamentals/test_day10_tuples_and_sets.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
