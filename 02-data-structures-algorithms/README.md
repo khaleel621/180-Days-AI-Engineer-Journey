@@ -31,6 +31,8 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Contains Duplicate (Day 10) | `arrays/day10-contains-duplicate.py` | Duplicate detection using a set; O(n) time, O(n) extra space | Files created; tests pass |
 | Best Time to Buy and Sell Stock tests | `arrays/test_day09_best_time_to_buy_and_sell_stock.py` | Tests for `max_profit()` covering all examples and edge cases | Passes |
 | Contains Duplicate tests | `arrays/test_day10_contains_duplicate.py` | Tests for `contains_duplicate()` covering duplicates, no duplicates, empty, single element, negatives, repeats, larger input | Passes |
+| Valid Anagram (Day 11) | `strings/is_anagram.py` | Anagram detection using dictionary frequency counting; O(n) time, O(k) extra space; no sorted() used | Files created; tests pass |
+| Valid Anagram tests | `strings/test_day11_valid_anagram.py` | Tests for `is_anagram()` covering valid/invalid anagrams, different lengths, empty strings, single characters, repeated characters, case sensitivity | Passes |
 
 ## Details
 
@@ -102,6 +104,32 @@ Example: `binary_search([10, 20, 30, 40, 50, 60, 70], 50)` returns `4`, and the 
 
 Compares linear and binary search: how they work, why binary search requires sorted data, time complexity of both, and a best/average/worst case table.
 
+### Day 11 — Valid Anagram — `strings/is_anagram.py`
+
+`is_anagram(s, t)` determines whether two strings are anagrams using dictionary frequency counting.
+
+**Approach:**
+1. If the strings have different lengths, they cannot be anagrams → return `False`.
+2. Count character frequencies in `s` using a dictionary.
+3. For each character in `t`, decrement its count. If a character is missing or count goes negative → return `False`.
+4. If all counts return to zero → return `True`.
+
+Does NOT use `sorted()` or compare sorted strings.
+
+Examples:
+- `is_anagram("listen", "silent")` → `True`
+- `is_anagram("hello", "world")` → `False`
+- `is_anagram("anagram", "nagaram")` → `True`
+- `is_anagram("rat", "car")` → `False`
+- `is_anagram("a", "a")` → `True`
+- `is_anagram("a", "ab")` → `False`
+- `is_anagram("", "")` → `True`
+
+- **Time complexity:** O(n) — one pass through each string.
+- **Extra space complexity:** O(k) — k distinct characters stored in the dictionary.
+
+Verified: all 14 tests in `strings/test_day11_valid_anagram.py` pass.
+
 ## Files Not Present
 
 The following files are referenced in older notes but do **not** currently exist:
@@ -132,6 +160,8 @@ python 02-data-structures-algorithms/arrays/day09-best-time-to-buy-and-sell-stoc
 python 02-data-structures-algorithms/arrays/test_day09_best_time_to_buy_and_sell_stock.py
 python 02-data-structures-algorithms/arrays/day10-contains-duplicate.py
 python 02-data-structures-algorithms/arrays/test_day10_contains_duplicate.py
+python 02-data-structures-algorithms/strings/is_anagram.py
+python 02-data-structures-algorithms/strings/test_day11_valid_anagram.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

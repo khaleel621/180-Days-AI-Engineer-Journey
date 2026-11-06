@@ -14,6 +14,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 6: Dictionaries | `day06-dictionaries.py` | Dictionaries: student names mapped to marks; access a student's marks, add a new student, update existing marks, and loop through names and marks with `.items()`. |
 | Day 9: List Comprehensions | `day09-list-comprehensions.py` | List comprehensions: `square_numbers(numbers)` returns squares via `[x * x for x in numbers]`; `filter_even_numbers(numbers)` returns even values via `[x for x in numbers if x % 2 == 0]`. Original list is not modified. No `map()` or `filter()` used. |
 | Day 10: Tuples and Sets | `day10-tuples-and-sets.py` | Tuples: ordered, immutable collections with indexing. Sets: unordered collections of unique values with add/remove and set operations. Includes `tuple_information(items)` and `remove_duplicates(numbers)` exercises. |
+| Day 11: Dictionaries and Frequency Counting | `day11-dictionaries-frequency.py` | Dictionaries: key-value pairs, creating, accessing, adding, updating, removing. Methods: keys(), values(), items(), get(), update(), pop(). Dictionary iteration. Frequency counting with dictionaries. Includes `calculate_total_marks(marks)` and `character_frequency(text)` exercises. |
 
 ## How to Run Each Exercise
 
@@ -26,6 +27,7 @@ python 01-python-fundamentals/day05-functions.py
 python 01-python-fundamentals/day06-dictionaries.py
 python 01-python-fundamentals/day09-list-comprehensions.py
 python 01-python-fundamentals/day10-tuples-and-sets.py
+python 01-python-fundamentals/day11-dictionaries-frequency.py
 ```
 
 `03-multiplication-table.py` prompts for an integer and prints its multiplication table from 1 to 10.
@@ -43,6 +45,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day06_dictionaries.py` | Dictionary demo in `day06-dictionaries.py` | `python 01-python-fundamentals/test_day06_dictionaries.py` | Passes |
 | `test_day09_list_comprehensions.py` | `square_numbers()` and `filter_even_numbers()` in `day09-list-comprehensions.py` | `python 01-python-fundamentals/test_day09_list_comprehensions.py` | Passes |
 | `test_day10_tuples_and_sets.py` | `tuple_information()` and `remove_duplicates()` in `day10-tuples-and-sets.py` | `python 01-python-fundamentals/test_day10_tuples_and_sets.py` | Passes |
+| `test_day11_dictionaries_frequency.py` | `calculate_total_marks()` and `character_frequency()` in `day11-dictionaries-frequency.py` | `python 01-python-fundamentals/test_day11_dictionaries_frequency.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 

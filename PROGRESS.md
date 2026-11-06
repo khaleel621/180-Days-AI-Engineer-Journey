@@ -188,12 +188,47 @@
 - [ ] Time complexity: O(n) — one pass through the list
 - [ ] Extra space complexity: O(n) — the set may store up to n elements
 
+## Day 11 — 2026-11-06: Python Dictionary Methods and Frequency Counting + DSA Valid Anagram
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| calculate_total_marks(marks) | Files created; tests pass | `calculate_total_marks(marks)` in `01-python-fundamentals/day11-dictionaries-frequency.py`. Sums all values in a dictionary. Verified: `test_day11_dictionaries_frequency.py` passes. |
+| character_frequency(text) | Files created; tests pass | `character_frequency(text)` in `01-python-fundamentals/day11-dictionaries-frequency.py`. Counts character frequencies using a dictionary. Verified: `test_day11_dictionaries_frequency.py` passes. |
+| is_anagram(s, t) | Files created; tests pass | `is_anagram(s, t)` in `02-data-structures-algorithms/strings/is_anagram.py`. Dictionary frequency counting, O(n) time, O(k) extra space, no sorted(). Verified: `test_day11_valid_anagram.py` passes (14 tests). |
+
+### Concepts Learned — Python Day 11
+
+- [ ] Dictionaries: key-value pairs created with `{}`
+- [ ] Creating dictionaries: empty, with items, mixed types
+- [ ] Accessing values: square brackets `[]` and `.get()`
+- [ ] Adding values: assignment `dict[key] = value`
+- [ ] Updating values: assignment and `.update()`
+- [ ] Removing entries: `.pop()` and `del`
+- [ ] `.keys()` — view of all keys
+- [ ] `.values()` — view of all values
+- [ ] `.items()` — view of all key-value pairs
+- [ ] Dictionary iteration: iterating over keys directly
+- [ ] Frequency counting: using a dictionary to count occurrences
+- [ ] `calculate_total_marks(marks)` — sum of all dictionary values
+- [ ] `character_frequency(text)` — character frequency dictionary
+
+### Concepts Learned — DSA Day 11
+
+- [ ] Valid Anagram: determine if two strings are anagrams
+- [ ] Dictionary frequency counting: count characters in first string, decrement with second
+- [ ] Early length check: different lengths cannot be anagrams
+- [ ] No `sorted()` used
+- [ ] Time complexity: O(n) — one pass through each string
+- [ ] Extra space complexity: O(k) — k distinct characters
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 9 stock profit: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 10 tuples and sets: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 10 contains duplicate: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 11 dictionaries and frequency counting: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 11 valid anagram: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -207,8 +242,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 10 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 10 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 11 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 11 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
