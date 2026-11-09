@@ -221,6 +221,33 @@
 - [ ] Time complexity: O(n) — one pass through each string
 - [ ] Extra space complexity: O(k) — k distinct characters
 
+## Day 12 — 2026-11-09: Python Exception Handling + DSA Valid Parentheses
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| `safe_divide(a, b)` | Files created; tests pass | `safe_divide(a, b)` in `01-python-fundamentals/day12-exception-handling.py`. Divides `a` by `b` using try/except/else/finally. Catches `ZeroDivisionError` and returns a clear message instead of crashing. Verified: `test_day12_exception_handling.py` passes (10 tests). |
+| `convert_to_integer(value)` | Files created; tests pass | `convert_to_integer(value)` in `01-python-fundamentals/day12-exception-handling.py`. Converts valid input to an integer and catches `ValueError`, returning a clear message for invalid input. Verified: `test_day12_exception_handling.py` passes (10 tests). |
+| `is_valid(s)` | Files created; tests pass | `is_valid(s)` in `02-data-structures-algorithms/stacks/day12-valid-parentheses.py`. Valid parentheses using a stack implemented with a Python list (`append()`/`pop()`). Supports `()`, `{}`, `[]`. O(n) time, O(n) space. Verified: `test_day12_valid_parentheses.py` passes (9 tests). |
+
+### Concepts Learned — Python Day 12
+
+- [ ] Exception handling with `try`, `except`, `else`, and `finally` blocks.
+- [ ] Catching `ZeroDivisionError` during division.
+- [ ] Catching `ValueError` during integer conversion.
+- [ ] Returning clear error messages instead of crashing.
+- [ ] `finally` block always runs, useful for cleanup.
+
+### Concepts Learned — DSA Day 12
+
+- [ ] Valid Parentheses: determine whether brackets are correctly matched.
+- [ ] Stack implemented with a Python list.
+- [ ] `append()` pushes opening brackets; `pop()` removes the most recent one (LIFO).
+- [ ] Matching pairs `()`, `{}`, `[]` using a closing-to-opening dictionary.
+- [ ] Empty string is valid; unmatched or mis-nested brackets are invalid.
+- [ ] Time complexity: O(n) — one pass through the string.
+- [ ] Extra space complexity: O(n) — the stack may hold up to n opening brackets.
+- [ ] No `sorted()`, no regular expressions, no counting instead of a stack.
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -229,6 +256,8 @@
 - DSA Day 10 contains duplicate: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 11 dictionaries and frequency counting: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 11 valid anagram: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 12 exception handling: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 12 valid parentheses: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -236,14 +265,14 @@
 | Exercise | Status | Notes |
 |----------|--------|-------|
 | Word Frequency Counter | Planned — Not Started | Not practiced yet |
-| Safe Division | Planned — Not Started | Not practiced yet |
+| Safe Division | Implemented — Day 12 | Implemented in Day 12 as `safe_divide(a, b)` in `01-python-fundamentals/day12-exception-handling.py`; tests pass. Learner practice pending. |
 
 ## Topic Folders
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 11 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 11 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 12 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 12 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

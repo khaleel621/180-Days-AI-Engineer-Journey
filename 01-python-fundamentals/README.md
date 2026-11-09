@@ -15,6 +15,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 9: List Comprehensions | `day09-list-comprehensions.py` | List comprehensions: `square_numbers(numbers)` returns squares via `[x * x for x in numbers]`; `filter_even_numbers(numbers)` returns even values via `[x for x in numbers if x % 2 == 0]`. Original list is not modified. No `map()` or `filter()` used. |
 | Day 10: Tuples and Sets | `day10-tuples-and-sets.py` | Tuples: ordered, immutable collections with indexing. Sets: unordered collections of unique values with add/remove and set operations. Includes `tuple_information(items)` and `remove_duplicates(numbers)` exercises. |
 | Day 11: Dictionaries and Frequency Counting | `day11-dictionaries-frequency.py` | Dictionaries: key-value pairs, creating, accessing, adding, updating, removing. Methods: keys(), values(), items(), get(), update(), pop(). Dictionary iteration. Frequency counting with dictionaries. Includes `calculate_total_marks(marks)` and `character_frequency(text)` exercises. |
+| Day 12: Exception Handling | `day12-exception-handling.py` | Exception handling with try/except/else/finally. Includes `safe_divide(a, b)` (handles division by zero) and `convert_to_integer(value)` (handles invalid input with ValueError). |
 
 ## How to Run Each Exercise
 
@@ -46,6 +47,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day09_list_comprehensions.py` | `square_numbers()` and `filter_even_numbers()` in `day09-list-comprehensions.py` | `python 01-python-fundamentals/test_day09_list_comprehensions.py` | Passes |
 | `test_day10_tuples_and_sets.py` | `tuple_information()` and `remove_duplicates()` in `day10-tuples-and-sets.py` | `python 01-python-fundamentals/test_day10_tuples_and_sets.py` | Passes |
 | `test_day11_dictionaries_frequency.py` | `calculate_total_marks()` and `character_frequency()` in `day11-dictionaries-frequency.py` | `python 01-python-fundamentals/test_day11_dictionaries_frequency.py` | Passes |
+| `test_day12_exception_handling.py` | `safe_divide()` and `convert_to_integer()` in `day12-exception-handling.py` | `python 01-python-fundamentals/test_day12_exception_handling.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -62,6 +64,9 @@ The following files are referenced in older notes but do **not** currently exist
 ## Planned — Not Started
 
 - Word Frequency Counter
-- Safe Division
 
 These exercises are planned for future practice but have not been started yet.
+
+## Completed — Learner Practice Pending
+
+- Safe Division — implemented in Day 12 (`day12-exception-handling.py` as `safe_divide(a, b)`); tests pass. Learner practice is pending, so the day is not marked complete yet.

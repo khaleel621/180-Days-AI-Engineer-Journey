@@ -33,6 +33,8 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Contains Duplicate tests | `arrays/test_day10_contains_duplicate.py` | Tests for `contains_duplicate()` covering duplicates, no duplicates, empty, single element, negatives, repeats, larger input | Passes |
 | Valid Anagram (Day 11) | `strings/is_anagram.py` | Anagram detection using dictionary frequency counting; O(n) time, O(k) extra space; no sorted() used | Files created; tests pass |
 | Valid Anagram tests | `strings/test_day11_valid_anagram.py` | Tests for `is_anagram()` covering valid/invalid anagrams, different lengths, empty strings, single characters, repeated characters, case sensitivity | Passes |
+| Valid Parentheses (Day 12) | `stacks/day12-valid-parentheses.py` | Valid parentheses using a stack (Python list) with `append()` and `pop()`. Supports `()`, `{}`, `[]`. O(n) time, O(n) extra space. | Files created; tests pass |
+| Valid Parentheses tests (Day 12) | `stacks/test_day12_valid_parentheses.py` | Tests for `is_valid()` covering all 9 required cases. | Passes |
 
 ## Details
 
@@ -162,6 +164,8 @@ python 02-data-structures-algorithms/arrays/day10-contains-duplicate.py
 python 02-data-structures-algorithms/arrays/test_day10_contains_duplicate.py
 python 02-data-structures-algorithms/strings/is_anagram.py
 python 02-data-structures-algorithms/strings/test_day11_valid_anagram.py
+python 02-data-structures-algorithms/stacks/day12-valid-parentheses.py
+python 02-data-structures-algorithms/stacks/test_day12_valid_parentheses.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
