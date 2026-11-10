@@ -248,6 +248,36 @@
 - [ ] Extra space complexity: O(n) — the stack may hold up to n opening brackets.
 - [ ] No `sorted()`, no regular expressions, no counting instead of a stack.
 
+## Day 13 — 2026-11-10: Python File Handling + DSA Min Stack
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Save student details (write mode) | Files created; tests pass | `save_student_details(filename, name, marks)` in `01-python-fundamentals/day13-file-handling.py`. Writes student name and marks using `with open()` in write mode. Verified: `test_day13_file_handling.py` passes (7 tests). |
+| Read file content | Files created; tests pass | `read_file(filename)` in `01-python-fundamentals/day13-file-handling.py`. Reads and returns complete file content; handles `FileNotFoundError`. Verified: `test_day13_file_handling.py` passes (7 tests). |
+| Append student subject | Files created; tests pass | `append_student_subject(filename, subject)` in `01-python-fundamentals/day13-file-handling.py`. Appends using `with open()` in append mode without overwriting existing content. Verified: `test_day13_file_handling.py` passes (7 tests). |
+| Min Stack | Files created; tests pass | `MinStack` class in `02-data-structures-algorithms/stacks/day13-min-stack.py`. Two-stack approach: `stack` stores all values, `min_stack` tracks minimums. `push`, `pop`, `top`, `get_min` run in O(1); `get_min()` does not use built-in `min()`. Empty stack returns None. Verified: `test_day13_min_stack.py` passes (9 tests). |
+
+### Concepts Learned — Python Day 13
+
+- [ ] File handling with `with open()` in write (`"w"`), read (`"r"`), and append (`"a"`) modes.
+- [ ] Writing student details to a file.
+- [ ] Reading complete file content.
+- [ ] Catching `FileNotFoundError` for missing files.
+- [ ] Appending content without overwriting existing content.
+- [ ] The `with` statement closes files automatically.
+
+### Concepts Learned — DSA Day 13
+
+- [ ] Min Stack using two stacks.
+- [ ] One stack stores all values; the second tracks minimum values.
+- [ ] `push(value)` updates `min_stack` when `value <= current minimum` (handles repeated minimums).
+- [ ] `pop()` removes from `min_stack` when the popped value equals the current minimum.
+- [ ] `top()` returns the top value without removing it.
+- [ ] `get_min()` returns the top of `min_stack` without using built-in `min()`.
+- [ ] All four operations run in O(1) time.
+- [ ] Empty-stack behaviour: `pop()`, `top()`, `get_min()` return None.
+- [ ] Time complexity: O(1); Space complexity: O(n).
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -258,6 +288,8 @@
 - DSA Day 11 valid anagram: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 12 exception handling: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 12 valid parentheses: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 13 file handling: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 13 min stack: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -271,8 +303,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 12 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 12 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 13 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 13 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

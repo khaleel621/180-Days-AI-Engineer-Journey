@@ -35,6 +35,8 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Valid Anagram tests | `strings/test_day11_valid_anagram.py` | Tests for `is_anagram()` covering valid/invalid anagrams, different lengths, empty strings, single characters, repeated characters, case sensitivity | Passes |
 | Valid Parentheses (Day 12) | `stacks/day12-valid-parentheses.py` | Valid parentheses using a stack (Python list) with `append()` and `pop()`. Supports `()`, `{}`, `[]`. O(n) time, O(n) extra space. | Files created; tests pass |
 | Valid Parentheses tests (Day 12) | `stacks/test_day12_valid_parentheses.py` | Tests for `is_valid()` covering all 9 required cases. | Passes |
+| Min Stack (Day 13) | `stacks/day13-min-stack.py` | Min stack using two stacks: one stores all values, the other tracks minimums. `push`, `pop`, `top`, and `get_min` all run in O(1) time; `get_min()` does not use built-in `min()`. | Files created; tests pass |
+| Min Stack tests (Day 13) | `stacks/test_day13_min_stack.py` | Tests for `MinStack` covering positive/negative numbers, repeated minimums, popping the minimum, `top()`, empty-stack behaviour, and multi-operation sequences. | Passes |
 
 ## Details
 
@@ -166,6 +168,8 @@ python 02-data-structures-algorithms/strings/is_anagram.py
 python 02-data-structures-algorithms/strings/test_day11_valid_anagram.py
 python 02-data-structures-algorithms/stacks/day12-valid-parentheses.py
 python 02-data-structures-algorithms/stacks/test_day12_valid_parentheses.py
+python 02-data-structures-algorithms/stacks/day13-min-stack.py
+python 02-data-structures-algorithms/stacks/test_day13_min_stack.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
