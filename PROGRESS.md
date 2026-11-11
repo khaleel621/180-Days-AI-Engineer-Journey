@@ -278,6 +278,34 @@
 - [ ] Empty-stack behaviour: `pop()`, `top()`, `get_min()` return None.
 - [ ] Time complexity: O(1); Space complexity: O(n).
 
+## Day 14 — 2026-11-11: Python Modules and Packages + DSA Reverse Polish Notation
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Python: Modules and Packages | Implemented — verified | `calculate_circle_area(radius)` using `math.pi` and `generate_random_number()` using `random.randint(1, 100)` in `01-python-fundamentals/day14-modules-and-packages.py`; importing from custom module `math_operations.py` (`add`, `subtract`, `multiply`, `divide` with division-by-zero handling) demonstrated via `import`, `from ... import`, and `... as`. Verified: `test_day14_modules_and_packages.py` passes (12 tests). |
+| DSA: Evaluate Reverse Polish Notation | Implemented — verified | `eval_rpn(tokens)` using a stack in `02-data-structures-algorithms/stacks/day14-evaluate-reverse-polish-notation.py`; supports `+`, `-`, `*`, `/`; correct operand order; division truncates toward zero; handles negative numbers; does not use `eval()`. Verified: `test_day14_evaluate_reverse_polish_notation.py` passes (11 tests), including all six required cases. |
+
+### Concepts Learned — Python Day 14
+
+- [ ] `import math` and `math.pi` for mathematical constants.
+- [ ] `import random` and `random.randint(1, 100)` for random integers.
+- [ ] `import module` — access functions with `module.function()`.
+- [ ] `from module import function` — import specific functions directly.
+- [ ] `from module import function as alias` — import with an alias using `as`.
+- [ ] Custom helper module `math_operations.py` with `add`, `subtract`, `multiply`, `divide`; division by zero returns a clear error message.
+- [ ] Negative radius input raises `ValueError`.
+
+### Concepts Learned — DSA Day 14
+
+- [ ] Reverse Polish Notation (postfix): operators follow their operands.
+- [ ] Use a stack (Python list with `append`/`pop`).
+- [ ] Push numbers; on an operator, pop the right operand first, then the left operand, compute, and push the result.
+- [ ] Operand order matters for `-` and `/`.
+- [ ] Division truncates toward zero via `int(a / b)` (not `a // b`).
+- [ ] Negative tokens like "-7" are handled by `int()`.
+- [ ] `eval()` is NOT used.
+- [ ] Time complexity: O(n); Space complexity: O(n).
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -290,6 +318,8 @@
 - DSA Day 12 valid parentheses: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 13 file handling: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 13 min stack: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 14 modules and packages: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 14 evaluate reverse polish notation: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -303,8 +333,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 13 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 13 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 14 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 14 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

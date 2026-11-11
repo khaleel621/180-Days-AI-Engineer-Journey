@@ -71,6 +71,8 @@ python 02-data-structures-algorithms/arrays/day01_test_two_sum.py
 * **Day 2 Practice Continuation — 2026-10-25: Even/Odd and Multiplication Table** — day_02-even-odd.py and 03-multiplication-table.py implemented and behavior verified. `test_day02-conditions-loops.py` now correctly loads from the DSA folder path and all tests pass.
 * **DSA array counting** — `count-even-numbers.py` (in `02-data-structures-algorithms/arrays/`) implemented and verified. `test_count_even_numbers.py` passes all test cases.
 
+* **Day 14 — 2026-11-11: Python Modules and Packages + DSA Evaluate Reverse Polish Notation** — `calculate_circle_area(radius)` using `math.pi`, `generate_random_number()` using `random.randint(1, 100)`, and importing from a custom module (`math_operations.py`) via `import`, `from ... import`, and `... as` in `01-python-fundamentals/day14-modules-and-packages.py` (verified: `test_day14_modules_and_packages.py` passes); `eval_rpn(tokens)` using a stack with `+`, `-`, `*`, `/`, division truncating toward zero, and negative-number handling in `02-data-structures-algorithms/stacks/day14-evaluate-reverse-polish-notation.py` (verified: `test_day14_evaluate_reverse_polish_notation.py` passes). Learner practice pending.
+
 Days 3 onward are not started unless explicitly recorded in PROGRESS.md.
 
 ## Documentation

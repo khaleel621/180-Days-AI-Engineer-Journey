@@ -37,6 +37,8 @@ Exercises are organized by topic (for example, `arrays/`). Tests are kept beside
 | Valid Parentheses tests (Day 12) | `stacks/test_day12_valid_parentheses.py` | Tests for `is_valid()` covering all 9 required cases. | Passes |
 | Min Stack (Day 13) | `stacks/day13-min-stack.py` | Min stack using two stacks: one stores all values, the other tracks minimums. `push`, `pop`, `top`, and `get_min` all run in O(1) time; `get_min()` does not use built-in `min()`. | Files created; tests pass |
 | Min Stack tests (Day 13) | `stacks/test_day13_min_stack.py` | Tests for `MinStack` covering positive/negative numbers, repeated minimums, popping the minimum, `top()`, empty-stack behaviour, and multi-operation sequences. | Passes |
+| Evaluate Reverse Polish Notation (Day 14) | `stacks/day14-evaluate-reverse-polish-notation.py` | Evaluate RPN (postfix) expressions using a stack. Supports `+`, `-`, `*`, `/`. Division truncates toward zero. Handles negative numbers. O(n) time, O(n) space. `eval()` is NOT used. | Files created; tests pass |
+| Evaluate RPN tests (Day 14) | `stacks/test_day14_evaluate_reverse_polish_notation.py` | Tests for `eval_rpn()` covering all required cases, multiplication, addition, negative intermediate results, and truncation toward zero. | Passes |
 
 ## Details
 
@@ -134,6 +136,27 @@ Examples:
 
 Verified: all 14 tests in `strings/test_day11_valid_anagram.py` pass.
 
+### Day 14 — Evaluate Reverse Polish Notation — `stacks/day14-evaluate-reverse-polish-notation.py`
+
+`eval_rpn(tokens)` evaluates an arithmetic expression in Reverse Polish Notation (postfix) using a stack:
+
+1. Scan tokens left to right.
+2. Number token → push `int(token)` onto the stack (handles negatives like "-7").
+3. Operator token (`+`, `-`, `*`, `/`) → pop the right operand first, then the left operand, apply the operator, and push the result. Operand order matters for `-` and `/`.
+4. Division truncates toward zero via `int(a / b)` (not `a // b`, which floors).
+5. The final value on the stack is the result. `eval()` is NOT used.
+
+Examples:
+- `eval_rpn(["2", "1", "+", "3", "*"])` → `9`  ((2 + 1) * 3)
+- `eval_rpn(["4", "13", "5", "/", "+"])` → `6`  (4 + truncate(13 / 5) = 4 + 2)
+- `eval_rpn(["-7", "2", "/"])` → `-3`  (truncate(-3.5) = -3)
+- `eval_rpn(["10","6","9","3","+","-11","*","/","*","17","+","5","+"])` → `22`
+
+- **Time complexity:** O(n) — each token is processed once; stack operations are O(1).
+- **Extra space complexity:** O(n) — the stack may hold up to n values.
+
+Verified: all 11 tests in `stacks/test_day14_evaluate_reverse_polish_notation.py` pass.
+
 ## Files Not Present
 
 The following files are referenced in older notes but do **not** currently exist:
@@ -170,6 +193,8 @@ python 02-data-structures-algorithms/stacks/day12-valid-parentheses.py
 python 02-data-structures-algorithms/stacks/test_day12_valid_parentheses.py
 python 02-data-structures-algorithms/stacks/day13-min-stack.py
 python 02-data-structures-algorithms/stacks/test_day13_min_stack.py
+python 02-data-structures-algorithms/stacks/day14-evaluate-reverse-polish-notation.py
+python 02-data-structures-algorithms/stacks/test_day14_evaluate_reverse_polish_notation.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
