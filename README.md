@@ -73,6 +73,8 @@ python 02-data-structures-algorithms/arrays/day01_test_two_sum.py
 
 * **Day 14 — 2026-11-11: Python Modules and Packages + DSA Evaluate Reverse Polish Notation** — `calculate_circle_area(radius)` using `math.pi`, `generate_random_number()` using `random.randint(1, 100)`, and importing from a custom module (`math_operations.py`) via `import`, `from ... import`, and `... as` in `01-python-fundamentals/day14-modules-and-packages.py` (verified: `test_day14_modules_and_packages.py` passes); `eval_rpn(tokens)` using a stack with `+`, `-`, `*`, `/`, division truncating toward zero, and negative-number handling in `02-data-structures-algorithms/stacks/day14-evaluate-reverse-polish-notation.py` (verified: `test_day14_evaluate_reverse_polish_notation.py` passes). Learner practice pending.
 
+* **Day 15 — 2026-11-13: Python OOP (Classes and Objects) + DSA Next Greater Element (Stack)** — `Student` and `BankAccount` classes (`__init__`, instance attributes, `is_passed` with marks >= 40, deposit/withdraw with validation) in `01-python-fundamentals/day15-oop-classes-and-objects.py` (verified: `test_day15_oop_classes_and_objects.py` passes); `next_greater_element()` using a stack with right-to-left traversal in `02-data-structures-algorithms/stacks/day15-next-greater-element.py` (verified: `test_day15_next_greater_element.py` passes). Learner practice pending.
+
 Days 3 onward are not started unless explicitly recorded in PROGRESS.md.
 
 ## Documentation

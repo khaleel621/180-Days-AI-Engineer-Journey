@@ -306,6 +306,32 @@
 - [ ] `eval()` is NOT used.
 - [ ] Time complexity: O(n); Space complexity: O(n).
 
+## Day 15 — 2026-11-13: Python OOP (Classes and Objects) + DSA Next Greater Element (Stack)
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| `Student` class | Files created; tests pass | `Student(name, marks)` in `01-python-fundamentals/day15-oop-classes-and-objects.py`. Stores name and marks; `display_details()` prints the student's details; `is_passed()` returns `True` when marks are at least 40, `False` otherwise. Invalid name/marks raise `ValueError`. Verified: `test_day15_oop_classes_and_objects.py` passes (17 tests). |
+| `BankAccount` class | Files created; tests pass | `BankAccount(owner, balance)` in `01-python-fundamentals/day15-oop-classes-and-objects.py`. Stores owner and balance; `deposit()` accepts positive amounts; `withdraw()` accepts positive amounts within the balance; `get_balance()` returns the balance. Invalid transactions and insufficient balance raise `ValueError` and leave the balance unchanged. Verified: `test_day15_oop_classes_and_objects.py` passes (17 tests). |
+| `next_greater_element(numbers)` | Files created; tests pass | `next_greater_element()` in `02-data-structures-algorithms/stacks/day15-next-greater-element.py`. Stack-based next greater element with right-to-left traversal; O(n) time, O(n) space; handles duplicates, empty input, and does not modify the input. Verified: `test_day15_next_greater_element.py` passes (11 tests). |
+
+### Concepts Learned — Python Day 15
+
+- [ ] Classes and objects: `class` keyword, `__init__` constructor, `self`.
+- [ ] Instance attributes: each object stores its own data.
+- [ ] Methods: `display_details()`, `is_passed()`, `deposit()`, `withdraw()`, `get_balance()`.
+- [ ] Input validation with `ValueError` and clear error messages.
+- [ ] Object independence: changing one object never affects another object.
+
+### Concepts Learned — DSA Day 15
+
+- [ ] Next Greater Element: first strictly greater element to the right; `-1` when none exists.
+- [ ] Stack implemented with a Python list (`append()`/`pop()`).
+- [ ] Traversing the input from right to left.
+- [ ] Monotonic decreasing stack: each element pushed once, popped at most once.
+- [ ] Duplicate values: equal values are not "greater", so they are popped.
+- [ ] Time complexity: O(n); Space complexity: O(n).
+- [ ] The original input list is not modified.
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -320,6 +346,8 @@
 - DSA Day 13 min stack: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 14 modules and packages: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 14 evaluate reverse polish notation: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 15 classes and objects: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 15 next greater element: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -333,8 +361,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 14 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 14 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 15 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 15 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

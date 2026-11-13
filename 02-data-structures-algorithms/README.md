@@ -157,6 +157,32 @@ Examples:
 
 Verified: all 11 tests in `stacks/test_day14_evaluate_reverse_polish_notation.py` pass.
 
+### Day 15 — Next Greater Element — `stacks/day15-next-greater-element.py`
+
+`next_greater_element(numbers)` finds the first strictly greater element to the right of every element using a stack:
+
+1. Create a result list filled with `-1` and an empty stack.
+2. Traverse the input from right to left.
+3. For the current element, pop every stack value that is not greater than it (`<= current`).
+4. If the stack is not empty, its top is the next greater element; otherwise the result is `-1`.
+5. Push the current element onto the stack.
+6. Return the result list.
+
+Duplicate values are handled correctly: equal values are popped, so the answer is strictly greater (`[5, 5, 5] -> [-1, -1, -1]`). The original input list is never modified.
+
+- **Time complexity:** O(n) — each element is pushed once and popped at most once.
+- **Extra space complexity:** O(n) — the stack and result list hold up to n values.
+
+Examples:
+- `next_greater_element([4, 5, 2, 10, 8])` → `[5, 10, 10, -1, -1]`
+- `next_greater_element([1, 2, 3, 4])` → `[2, 3, 4, -1]`
+- `next_greater_element([4, 3, 2, 1])` → `[-1, -1, -1, -1]`
+- `next_greater_element([5, 5, 5])` → `[-1, -1, -1]`
+- `next_greater_element([2, 1, 3])` → `[3, 3, -1]`
+- `next_greater_element([])` → `[]`
+
+Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
+
 ## Files Not Present
 
 The following files are referenced in older notes but do **not** currently exist:
@@ -195,6 +221,8 @@ python 02-data-structures-algorithms/stacks/day13-min-stack.py
 python 02-data-structures-algorithms/stacks/test_day13_min_stack.py
 python 02-data-structures-algorithms/stacks/day14-evaluate-reverse-polish-notation.py
 python 02-data-structures-algorithms/stacks/test_day14_evaluate_reverse_polish_notation.py
+python 02-data-structures-algorithms/stacks/day15-next-greater-element.py
+python 02-data-structures-algorithms/stacks/test_day15_next_greater_element.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
