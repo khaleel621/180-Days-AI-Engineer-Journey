@@ -183,6 +183,9 @@ Examples:
 
 Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 
+| Daily Temperatures (Day 16) | `stacks/day16-daily-temperatures.py` | Monotonic stack of indices; left-to-right traversal; zero-initialized result; O(n) time, O(n) space | Implemented — tests verified |
+| Daily Temperatures tests | `stacks/test_day16_daily_temperatures.py` | Tests for `daily_temperatures()` | Passes |
+
 ## Files Not Present
 
 The following files are referenced in older notes but do **not** currently exist:
@@ -223,6 +226,8 @@ python 02-data-structures-algorithms/stacks/day14-evaluate-reverse-polish-notati
 python 02-data-structures-algorithms/stacks/test_day14_evaluate_reverse_polish_notation.py
 python 02-data-structures-algorithms/stacks/day15-next-greater-element.py
 python 02-data-structures-algorithms/stacks/test_day15_next_greater_element.py
+python 02-data-structures-algorithms/stacks/day16-daily-temperatures.py
+python 02-data-structures-algorithms/stacks/test_day16_daily_temperatures.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

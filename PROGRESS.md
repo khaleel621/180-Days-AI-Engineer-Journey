@@ -332,6 +332,31 @@
 - [ ] Time complexity: O(n); Space complexity: O(n).
 - [ ] The original input list is not modified.
 
+## Day 16 — 2026-11-14: Python + DSA
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Python: Inheritance, Method Overriding and super() | Implemented — tests verified | `Employee`, `Manager(Employee)`, `Animal`/`Dog`/`Cat`, `Shape`/`Rectangle`/`Circle` in `01-python-fundamentals/day16-inheritance-and-method-overriding.py`. `super()` used in `Manager`; method overriding demonstrated; dimensions validated with `ValueError`; `math.pi` for circle area. Verified: `test_day16_inheritance_and_method_overriding.py` passes (24 tests). |
+| DSA: Daily Temperatures (Monotonic Stack) | Implemented — tests verified | `daily_temperatures(temperatures)` in `02-data-structures-algorithms/stacks/day16-daily-temperatures.py`. Monotonic stack storing indices, left-to-right traversal, zero-initialized result. Verified: `test_day16_daily_temperatures.py` passes (10 tests). |
+
+### Concepts Learned — Python Day 16
+
+- [ ] Parent and child classes; inheritance (`Manager` extends `Employee`).
+- [ ] `super()` to call the parent `__init__` for inherited attributes.
+- [ ] Method overriding: child redefines a parent method (`display_details`, `make_sound`, `area`).
+- [ ] Each object's attributes are independent.
+- [ ] `math.pi` for circle area.
+- [ ] Input validation with `ValueError` and documented error behaviour.
+
+### Concepts Learned — DSA Day 16
+
+- [ ] Daily Temperatures: days until a warmer temperature; `0` when none exists.
+- [ ] Monotonic stack storing indices (not temperatures).
+- [ ] Left-to-right traversal of the input.
+- [ ] Result list initialized with zeros.
+- [ ] Input list not modified; no nested-loop main solution.
+- [ ] Time complexity: O(n); Space complexity: O(n).
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -348,6 +373,8 @@
 - DSA Day 14 evaluate reverse polish notation: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 15 classes and objects: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 15 next greater element: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 16 inheritance and method overriding: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 16 daily temperatures: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -361,8 +388,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 15 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 15 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 16 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 16 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

@@ -75,6 +75,8 @@ python 02-data-structures-algorithms/arrays/day01_test_two_sum.py
 
 * **Day 15 — 2026-11-13: Python OOP (Classes and Objects) + DSA Next Greater Element (Stack)** — `Student` and `BankAccount` classes (`__init__`, instance attributes, `is_passed` with marks >= 40, deposit/withdraw with validation) in `01-python-fundamentals/day15-oop-classes-and-objects.py` (verified: `test_day15_oop_classes_and_objects.py` passes); `next_greater_element()` using a stack with right-to-left traversal in `02-data-structures-algorithms/stacks/day15-next-greater-element.py` (verified: `test_day15_next_greater_element.py` passes). Learner practice pending.
 
+* **Day 16 — 2026-11-14: Python OOP (Inheritance, Method Overriding and super()) + DSA Daily Temperatures (Monotonic Stack)** — `Employee`, `Manager(Employee)`, `Animal`/`Dog`/`Cat`, and `Shape`/`Rectangle`/`Circle` with `super()`, method overriding, `math.pi`, and `ValueError` validation in `01-python-fundamentals/day16-inheritance-and-method-overriding.py` (verified: `test_day16_inheritance_and_method_overriding.py` passes); `daily_temperatures()` using a monotonic stack storing indices with left-to-right traversal in `02-data-structures-algorithms/stacks/day16-daily-temperatures.py` (verified: `test_day16_daily_temperatures.py` passes). Learner practice pending.
+
 Days 3 onward are not started unless explicitly recorded in PROGRESS.md.
 
 ## Documentation

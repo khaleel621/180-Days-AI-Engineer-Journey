@@ -19,6 +19,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 13: File Handling | `day13-file-handling.py` | File handling: `save_student_details()` writes student details in write mode; `read_file()` reads complete file content and handles `FileNotFoundError`; `append_student_subject()` appends in append mode without overwriting existing content. Uses `with open()`. |
 | Day 14: Modules and Packages | `day14-modules-and-packages.py` (plus helper `math_operations.py`) | Modules and packages: `calculate_circle_area(radius)` uses `math.pi`; `generate_random_number()` uses `random.randint(1, 100)`; importing from a custom module demonstrated with `import`, `from ... import`, and `... as`. `math_operations.py` provides `add`, `subtract`, `multiply`, `divide` (division by zero handled). |
 | Day 15: Classes and Objects | `day15-oop-classes-and-objects.py` | Classes and objects: `Student` (`__init__`, `display_details`, `is_passed` with marks >= 40) and `BankAccount` (`__init__`, `deposit`, `withdraw`, `get_balance`) with input validation and object independence. |
+| Day 16: Inheritance, Method Overriding and super() | `day16-inheritance-and-method-overriding.py` | Inheritance: `Manager(Employee)` uses `super().__init__()` and overrides `display_details()`; `Dog(Animal)` and `Cat(Animal)` override `make_sound()`; `Rectangle(Shape)` and `Circle(Shape)` override `area()` (circle uses `math.pi`); `ValueError` validation for dimensions; each object's attributes are independent. |
 
 ## How to Run Each Exercise
 
@@ -54,6 +55,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day13_file_handling.py` | `save_student_details()`, `read_file()`, `append_student_subject()` in `day13-file-handling.py` | `python 01-python-fundamentals/test_day13_file_handling.py` | Passes |
 | `test_day14_modules_and_packages.py` | `calculate_circle_area()`, `generate_random_number()`, and imports from `math_operations.py` in `day14-modules-and-packages.py` | `python 01-python-fundamentals/test_day14_modules_and_packages.py` | Passes |
 | `test_day15_oop_classes_and_objects.py` | `Student` and `BankAccount` classes | `python 01-python-fundamentals/test_day15_oop_classes_and_objects.py` | Passes |
+| `test_day16_inheritance_and_method_overriding.py` | `Employee`, `Manager`, `Animal`/`Dog`/`Cat`, `Shape`/`Rectangle`/`Circle` | `python 01-python-fundamentals/test_day16_inheritance_and_method_overriding.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -78,3 +80,5 @@ These exercises are planned for future practice but have not been started yet.
 - Safe Division — implemented in Day 12 (`day12-exception-handling.py` as `safe_divide(a, b)`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - File Handling — implemented in Day 13 (`day13-file-handling.py` as `save_student_details()`, `read_file()`, `append_student_subject()`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Modules and Packages — implemented in Day 14 (`day14-modules-and-packages.py` with helper `math_operations.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- Classes and Objects — implemented in Day 15 (`day15-oop-classes-and-objects.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- Inheritance, Method Overriding and super() — implemented in Day 16 (`day16-inheritance-and-method-overriding.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
