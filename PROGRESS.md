@@ -357,6 +357,28 @@
 - [ ] Input list not modified; no nested-loop main solution.
 - [ ] Time complexity: O(n); Space complexity: O(n).
 
+## Day 17 — 2026-11-15: Python OOP Encapsulation and Largest Rectangle in Histogram
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| OOP Encapsulation — BankAccount | Implemented — tests verified | `01-python-fundamentals/day17-encapsulation.py`: public `account_holder_name`, protected `_account_number`, private `__balance`, `deposit()`, `withdraw()`, `get_balance()`, getter/setter for the account holder name, input validation with `ValueError`. Verified: `test_day17_encapsulation.py` passes (14 tests). |
+| Largest Rectangle in Histogram | Implemented — tests verified | `02-data-structures-algorithms/stacks/day17-largest-rectangle.py`: `largest_rectangle(heights)` using a monotonic increasing stack; O(n) time, O(n) extra space; handles empty, single-element, equal, increasing, decreasing and mixed heights. `[2, 1, 5, 6, 2, 3] -> 10`. Verified: `test_day17_largest_rectangle.py` passes (9 tests). |
+
+### Concepts Learned — Python Day 17
+- [x] Encapsulation: bundling data and methods, hiding internal state.
+- [x] Public attributes: accessible from outside the class.
+- [x] Protected attributes (`_name`): internal by convention, not blocked.
+- [x] Private attributes (`__name`): name-mangled, not directly accessible from outside.
+- [x] Getters and setters: controlled read/write access with validation.
+- [x] `ValueError` for invalid deposit/withdrawal amounts and insufficient funds.
+
+### Concepts Learned — DSA Day 17
+- [x] Largest Rectangle in Histogram: the widest rectangle is limited by the shortest bar in its span.
+- [x] Monotonic increasing stack of indices (heights increase bottom to top).
+- [x] Sentinel height of 0 flushes the remaining stack at the end.
+- [x] When a bar is popped, its rectangle spans from the new stack top + 1 to the current index - 1.
+- [x] Each index pushed once and popped at most once: O(n) time, O(n) space.
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -375,6 +397,8 @@
 - DSA Day 15 next greater element: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 16 inheritance and method overriding: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 16 daily temperatures: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 17 encapsulation: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 17 largest rectangle: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -388,8 +412,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 16 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 16 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 17 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 17 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

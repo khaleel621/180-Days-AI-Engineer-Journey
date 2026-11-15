@@ -185,6 +185,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 
 | Daily Temperatures (Day 16) | `stacks/day16-daily-temperatures.py` | Monotonic stack of indices; left-to-right traversal; zero-initialized result; O(n) time, O(n) space | Implemented — tests verified |
 | Daily Temperatures tests | `stacks/test_day16_daily_temperatures.py` | Tests for `daily_temperatures()` | Passes |
+| Largest Rectangle in Histogram (Day 17) | `stacks/day17-largest-rectangle.py` | Monotonic increasing stack of indices; sentinel height of 0; O(n) time, O(n) extra space | Implemented — tests verified |
+| Largest Rectangle tests | `stacks/test_day17_largest_rectangle.py` | Tests for `largest_rectangle()` | Passes |
 
 ## Files Not Present
 
@@ -228,6 +230,8 @@ python 02-data-structures-algorithms/stacks/day15-next-greater-element.py
 python 02-data-structures-algorithms/stacks/test_day15_next_greater_element.py
 python 02-data-structures-algorithms/stacks/day16-daily-temperatures.py
 python 02-data-structures-algorithms/stacks/test_day16_daily_temperatures.py
+python 02-data-structures-algorithms/stacks/day17-largest-rectangle.py
+python 02-data-structures-algorithms/stacks/test_day17_largest_rectangle.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

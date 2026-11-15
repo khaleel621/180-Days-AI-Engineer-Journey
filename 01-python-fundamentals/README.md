@@ -20,6 +20,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 14: Modules and Packages | `day14-modules-and-packages.py` (plus helper `math_operations.py`) | Modules and packages: `calculate_circle_area(radius)` uses `math.pi`; `generate_random_number()` uses `random.randint(1, 100)`; importing from a custom module demonstrated with `import`, `from ... import`, and `... as`. `math_operations.py` provides `add`, `subtract`, `multiply`, `divide` (division by zero handled). |
 | Day 15: Classes and Objects | `day15-oop-classes-and-objects.py` | Classes and objects: `Student` (`__init__`, `display_details`, `is_passed` with marks >= 40) and `BankAccount` (`__init__`, `deposit`, `withdraw`, `get_balance`) with input validation and object independence. |
 | Day 16: Inheritance, Method Overriding and super() | `day16-inheritance-and-method-overriding.py` | Inheritance: `Manager(Employee)` uses `super().__init__()` and overrides `display_details()`; `Dog(Animal)` and `Cat(Animal)` override `make_sound()`; `Rectangle(Shape)` and `Circle(Shape)` override `area()` (circle uses `math.pi`); `ValueError` validation for dimensions; each object's attributes are independent. |
+| Day 17: Encapsulation and Access Modifiers | `day17-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `get_balance()`; getters and setters with validation; `ValueError` for invalid amounts and insufficient funds. |
 
 ## How to Run Each Exercise
 
@@ -56,6 +57,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day14_modules_and_packages.py` | `calculate_circle_area()`, `generate_random_number()`, and imports from `math_operations.py` in `day14-modules-and-packages.py` | `python 01-python-fundamentals/test_day14_modules_and_packages.py` | Passes |
 | `test_day15_oop_classes_and_objects.py` | `Student` and `BankAccount` classes | `python 01-python-fundamentals/test_day15_oop_classes_and_objects.py` | Passes |
 | `test_day16_inheritance_and_method_overriding.py` | `Employee`, `Manager`, `Animal`/`Dog`/`Cat`, `Shape`/`Rectangle`/`Circle` | `python 01-python-fundamentals/test_day16_inheritance_and_method_overriding.py` | Passes |
+| `test_day17_encapsulation.py` | `BankAccount` class: public/protected/private access, deposit/withdraw validation, getters/setters, object independence | `python 01-python-fundamentals/test_day17_encapsulation.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -82,3 +84,4 @@ These exercises are planned for future practice but have not been started yet.
 - Modules and Packages — implemented in Day 14 (`day14-modules-and-packages.py` with helper `math_operations.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Classes and Objects — implemented in Day 15 (`day15-oop-classes-and-objects.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Inheritance, Method Overriding and super() — implemented in Day 16 (`day16-inheritance-and-method-overriding.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- Encapsulation and Access Modifiers — implemented in Day 17 (`day17-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
