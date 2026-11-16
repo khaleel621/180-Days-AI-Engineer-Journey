@@ -379,6 +379,29 @@
 - [x] When a bar is popped, its rectangle spans from the new stack top + 1 to the current index - 1.
 - [x] Each index pushed once and popped at most once: O(n) time, O(n) space.
 
+## Day 18 — 2026-11-16: Python OOP (Polymorphism, Overloading, Overriding) and Trapping Rain Water (Two Pointers)
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Python: Polymorphism, Method Overloading and Method Overriding | Implemented — tests verified | `01-python-fundamentals/day18-polymorphism.py`: Animal/Dog/Cat/Cow hierarchy with `make_sound()` overriding; `animal_sound()` polymorphic function; `Calculator.add()` using `*args` for Python-style overloading; `DogDuck`/`CatDuck`/`RobotDuck` with `make_it_speak()` for duck typing. Verified: `test_day18_polymorphism.py` passes (15 tests). |
+| DSA: Trapping Rain Water (Two Pointers) | Implemented — tests verified | `02-data-structures-algorithms/two-pointers/day18-trapping-rain-water.py`: `trap(height)` using two pointers; O(n) time, O(1) extra space; handles empty, single-element, increasing, decreasing, equal heights, and multiple water-trapping sections. `[] -> 0`, `[5] -> 0`, `[1,2,3,4] -> 0`, `[4,3,2,1] -> 0`, `[3,0,2,0,4] -> 7`, `[0,1,0,2,1,0,1,3,2,1,2,1] -> 6`. Verified: `test_day18_trapping_rain_water.py` passes (9 tests). |
+
+### Concepts Learned — Python Day 18
+
+- [x] Polymorphism: one interface (method name) with many different implementations; same method call behaves differently depending on the object.
+- [x] Method overriding: child class redefines a parent class method (`Dog.make_sound()`, `Cat.make_sound()`, `Cow.make_sound()` override `Animal.make_sound()`).
+- [x] Method overloading in Python: Python does not support traditional overloading; use `*args` / `**kwargs`, default arguments, or `isinstance()` checks instead.
+- [x] Duck typing: "If it walks like a duck and quacks like a duck, it's a duck" — any object with a `.speak()` method works with `make_it_speak()`, regardless of inheritance.
+- [x] Multiple objects tested for each polymorphic function.
+
+### Concepts Learned — DSA Day 18
+
+- [x] Trapping Rain Water: compute how much water can be trapped after raining given an elevation map.
+- [x] Two Pointers approach: `left` and `right` pointers start at the ends and move inward.
+- [x] Track `left_max` and `right_max` — the highest bar seen so far from each side.
+- [x] Always process the side with the smaller bar; water level is limited by the lower of the two maximums.
+- [x] O(n) time: each index visited at most once. O(1) space: only a few integer variables.
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -399,6 +422,8 @@
 - DSA Day 16 daily temperatures: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 17 encapsulation: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 17 largest rectangle: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 18 polymorphism: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 18 trapping rain water: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -412,8 +437,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 17 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 17 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 18 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 18 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
