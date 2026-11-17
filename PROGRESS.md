@@ -424,6 +424,8 @@
 - DSA Day 17 largest rectangle: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 18 polymorphism: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 18 trapping rain water: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 19 OOP abstraction: Implementation and tests created. **Learner practice pending.**
+- DSA Day 19 sliding window maximum: Implementation and tests created. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -437,8 +439,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 18 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 18 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 19 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 19 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

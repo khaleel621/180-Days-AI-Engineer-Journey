@@ -187,6 +187,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 | Daily Temperatures tests | `stacks/test_day16_daily_temperatures.py` | Tests for `daily_temperatures()` | Passes |
 | Largest Rectangle in Histogram (Day 17) | `stacks/day17-largest-rectangle.py` | Monotonic increasing stack of indices; sentinel height of 0; O(n) time, O(n) extra space | Implemented — tests verified |
 | Largest Rectangle tests | `stacks/test_day17_largest_rectangle.py` | Tests for `largest_rectangle()` | Passes |
+| Sliding Window Maximum (Day 19) | `arrays/day19-sliding-window-maximum.py` | `max_sliding_window(numbers, k)` using `collections.deque`; monotonic deque of indices; O(n) time, O(k) space; ValueError for invalid k; empty input returns [] | Files created; tests not yet run |
+| Sliding Window Maximum tests | `arrays/test_day19_sliding_window_maximum.py` | Tests for `max_sliding_window()` covering all 5 required cases and edge cases | Not yet run |
 
 ## Files Not Present
 
@@ -232,6 +234,8 @@ python 02-data-structures-algorithms/stacks/day16-daily-temperatures.py
 python 02-data-structures-algorithms/stacks/test_day16_daily_temperatures.py
 python 02-data-structures-algorithms/stacks/day17-largest-rectangle.py
 python 02-data-structures-algorithms/stacks/test_day17_largest_rectangle.py
+python 02-data-structures-algorithms/arrays/day19-sliding-window-maximum.py
+python 02-data-structures-algorithms/arrays/test_day19_sliding_window_maximum.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
