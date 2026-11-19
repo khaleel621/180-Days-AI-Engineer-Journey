@@ -402,6 +402,22 @@
 - [x] Always process the side with the smaller bar; water level is limited by the lower of the two maximums.
 - [x] O(n) time: each index visited at most once. O(1) space: only a few integer variables.
 
+## Day 20 — 2026-11-19: Python OOP Encapsulation + DSA Minimum Window Substring
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Python: OOP Encapsulation (BankAccount) | Completed — tests pass | `day20-oop-encapsulation.py`: `BankAccount` with private `__balance`, `deposit()`, `withdraw()`, `display_balance()`, getters/setters with validation; prevents negative deposits and overdrafts. Verified: `test_day20_oop_encapsulation.py` passes. |
+| DSA: Minimum Window Substring | Completed — tests pass | `day20-minimum-window-substring.py`: sliding window + frequency dictionary; smallest substring of `s` containing all characters of `t` (including duplicates); returns `""` when no valid window exists. Verified: `test_day20_minimum_window_substring.py` passes. |
+
+### Concepts Learned
+- [x] Public, protected and private attributes
+- [x] Private variables using double underscores (name mangling)
+- [x] Getters and setters with validation
+- [x] Why encapsulation is useful (guards object invariants)
+- [x] Sliding window + frequency dictionary approach
+- [x] Expand and shrink the window; handle duplicate characters; empty-input handling
+- [x] Time complexity O(|s| + |t|), space complexity O(|s| + |t|)
+
 ### Learner Practice Status
 
 - Python Day 9 list comprehensions: Implementation and tests created and verified. **Learner practice pending.**
@@ -426,6 +442,8 @@
 - DSA Day 18 trapping rain water: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 19 OOP abstraction: Implementation and tests created. **Learner practice pending.**
 - DSA Day 19 sliding window maximum: Implementation and tests created. **Learner practice pending.**
+- Python Day 20 OOP encapsulation: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 20 minimum window substring: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -439,8 +457,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 19 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 19 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 20 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 20 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

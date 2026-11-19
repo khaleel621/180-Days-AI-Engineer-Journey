@@ -22,6 +22,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 16: Inheritance, Method Overriding and super() | `day16-inheritance-and-method-overriding.py` | Inheritance: `Manager(Employee)` uses `super().__init__()` and overrides `display_details()`; `Dog(Animal)` and `Cat(Animal)` override `make_sound()`; `Rectangle(Shape)` and `Circle(Shape)` override `area()` (circle uses `math.pi`); `ValueError` validation for dimensions; each object's attributes are independent. |
 | Day 17: Encapsulation and Access Modifiers | `day17-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `get_balance()`; getters and setters with validation; `ValueError` for invalid amounts and insufficient funds. |
 | Day 19: OOP Abstraction | `day19-oop-abstraction.py` | Abstraction: abstract base class `Shape` with abstract method `area()` using `ABC` and `abstractmethod`; concrete `Rectangle` (length × width) and `Circle` (π × radius²); abstract class cannot be instantiated directly. |
+| Day 20: OOP Encapsulation | `day20-oop-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `display_balance()`; getters and setters with validation; prevents negative deposits and overdrafts. |
 
 ## How to Run Each Exercise
 
@@ -60,6 +61,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day16_inheritance_and_method_overriding.py` | `Employee`, `Manager`, `Animal`/`Dog`/`Cat`, `Shape`/`Rectangle`/`Circle` | `python 01-python-fundamentals/test_day16_inheritance_and_method_overriding.py` | Passes |
 | `test_day17_encapsulation.py` | `BankAccount` class: public/protected/private access, deposit/withdraw validation, getters/setters, object independence | `python 01-python-fundamentals/test_day17_encapsulation.py` | Passes |
 | `test_day19_oop_abstraction.py` | `Shape`, `Rectangle`, `Circle` classes; abstract class cannot be instantiated; Rectangle area = 50; Circle area ≈ 78.54 | `python 01-python-fundamentals/test_day19_oop_abstraction.py` | Not yet run |
+| `test_day20_oop_encapsulation.py` | `BankAccount` class: public/protected/private attributes, deposit/withdraw validation, getters/setters | `python 01-python-fundamentals/test_day20_oop_encapsulation.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -88,3 +90,4 @@ These exercises are planned for future practice but have not been started yet.
 - Inheritance, Method Overriding and super() — implemented in Day 16 (`day16-inheritance-and-method-overriding.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Encapsulation and Access Modifiers — implemented in Day 17 (`day17-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - OOP Abstraction — implemented in Day 19 (`day19-oop-abstraction.py`); tests written. Learner practice is pending, so the day is not marked complete yet.
+- OOP Encapsulation — implemented in Day 20 (`day20-oop-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.

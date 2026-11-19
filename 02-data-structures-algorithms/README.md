@@ -189,6 +189,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 | Largest Rectangle tests | `stacks/test_day17_largest_rectangle.py` | Tests for `largest_rectangle()` | Passes |
 | Sliding Window Maximum (Day 19) | `arrays/day19-sliding-window-maximum.py` | `max_sliding_window(numbers, k)` using `collections.deque`; monotonic deque of indices; O(n) time, O(k) space; ValueError for invalid k; empty input returns [] | Files created; tests not yet run |
 | Sliding Window Maximum tests | `arrays/test_day19_sliding_window_maximum.py` | Tests for `max_sliding_window()` covering all 5 required cases and edge cases | Not yet run |
+| Minimum Window Substring (Day 20) | `strings/day20-minimum-window-substring.py` | Sliding window + frequency dictionary for the smallest substring of `s` containing all characters of `t` (including duplicates); O(|s| + |t|) time, O(|s| + |t|) space | Files created; tests pass |
+| Minimum Window Substring tests | `strings/test_day20_minimum_window_substring.py` | Tests for `min_window()` covering normal case, no valid window, exact match, duplicate characters, empty input, and single-character input | Passes |
 
 ## Files Not Present
 
@@ -236,6 +238,8 @@ python 02-data-structures-algorithms/stacks/day17-largest-rectangle.py
 python 02-data-structures-algorithms/stacks/test_day17_largest_rectangle.py
 python 02-data-structures-algorithms/arrays/day19-sliding-window-maximum.py
 python 02-data-structures-algorithms/arrays/test_day19_sliding_window_maximum.py
+python 02-data-structures-algorithms/strings/day20-minimum-window-substring.py
+python 02-data-structures-algorithms/strings/test_day20_minimum_window_substring.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
