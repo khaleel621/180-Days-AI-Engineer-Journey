@@ -25,7 +25,12 @@ review of the metrics and exercise completion remain pending.
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    classification_report,
+    precision_recall_fscore_support,
+)
 
 # 1. Load the Iris dataset
 iris = load_iris()
@@ -70,3 +75,36 @@ print(conf_matrix)
 print()
 print("Classification Report:")
 print(class_report)
+
+# ------------------------------------------------------------------
+# Explicit precision, recall and F1-score per class.
+# The classification report above already shows these, but we compute
+# them here separately so each metric is easy to see and explain.
+#
+# precision_recall_fscore_support returns, for each class:
+#   precision: of all samples predicted as this class, how many were correct?
+#   recall:    of all samples that truly are this class, how many did we find?
+#   f1-score:  the harmonic mean of precision and recall (a balance of both).
+#   support:   the number of actual samples of this class in the test set.
+# ------------------------------------------------------------------
+precision, recall, f1, support = precision_recall_fscore_support(
+    y_test, y_pred
+)
+
+print()
+print("Per-class precision, recall and F1-score:")
+for i, class_name in enumerate(iris.target_names):
+    print(f"  {class_name}:")
+    print(f"    precision = {precision[i]:.4f}")
+    print(f"    recall    = {recall[i]:.4f}")
+    print(f"    f1-score  = {f1[i]:.4f}")
+    print(f"    support   = {support[i]}")
+
+# Simple English explanations of each evaluation metric.
+print()
+print("What these metrics mean (in simple English):")
+print("  Accuracy   : fraction of all test predictions that are correct.")
+print("  Precision  : of the samples predicted as a class, how many are really that class.")
+print("  Recall     : of the samples that really are a class, how many did we identify?")
+print("  F1-score   : a balance of precision and recall (their harmonic mean).")
+print("  Support    : how many actual test samples belong to each class.")

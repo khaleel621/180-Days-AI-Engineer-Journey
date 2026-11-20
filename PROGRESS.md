@@ -444,6 +444,8 @@
 - DSA Day 19 sliding window maximum: Implementation and tests created. **Learner practice pending.**
 - Python Day 20 OOP encapsulation: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 20 minimum window substring: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 21 class and static methods: Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 21 heap / kth largest element: Implementation and tests created and verified. **Learner practice pending.**
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -457,8 +459,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 20 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 20 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 21 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 21 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

@@ -62,6 +62,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day17_encapsulation.py` | `BankAccount` class: public/protected/private access, deposit/withdraw validation, getters/setters, object independence | `python 01-python-fundamentals/test_day17_encapsulation.py` | Passes |
 | `test_day19_oop_abstraction.py` | `Shape`, `Rectangle`, `Circle` classes; abstract class cannot be instantiated; Rectangle area = 50; Circle area ≈ 78.54 | `python 01-python-fundamentals/test_day19_oop_abstraction.py` | Not yet run |
 | `test_day20_oop_encapsulation.py` | `BankAccount` class: public/protected/private attributes, deposit/withdraw validation, getters/setters | `python 01-python-fundamentals/test_day20_oop_encapsulation.py` | Passes |
+| `test_day21_class_and_static_methods.py` | `Student` class: instance/class/static methods, class variable, pass/fail static method | `python 01-python-fundamentals/test_day21_class_and_static_methods.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -91,3 +92,4 @@ These exercises are planned for future practice but have not been started yet.
 - Encapsulation and Access Modifiers — implemented in Day 17 (`day17-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - OOP Abstraction — implemented in Day 19 (`day19-oop-abstraction.py`); tests written. Learner practice is pending, so the day is not marked complete yet.
 - OOP Encapsulation — implemented in Day 20 (`day20-oop-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- Class Methods and Static Methods — implemented in Day 21 (`day21-class-and-static-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.

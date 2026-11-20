@@ -191,6 +191,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 | Sliding Window Maximum tests | `arrays/test_day19_sliding_window_maximum.py` | Tests for `max_sliding_window()` covering all 5 required cases and edge cases | Not yet run |
 | Minimum Window Substring (Day 20) | `strings/day20-minimum-window-substring.py` | Sliding window + frequency dictionary for the smallest substring of `s` containing all characters of `t` (including duplicates); O(|s| + |t|) time, O(|s| + |t|) space | Files created; tests pass |
 | Minimum Window Substring tests | `strings/test_day20_minimum_window_substring.py` | Tests for `min_window()` covering normal case, no valid window, exact match, duplicate characters, empty input, and single-character input | Passes |
+| Kth Largest Element / Heap (Day 21) | `heaps/day21-kth-largest-element.py` | `find_kth_largest(nums, k)` using a min-heap of size k via `heapq`; handles duplicates, validates k; O(n log k) time, O(k) space | Files created; tests pass |
+| Kth Largest Element tests | `heaps/test_day21_kth_largest_element.py` | Tests for normal case, duplicates, K=1, K=len(nums), single element, invalid k | Passes |
 
 ## Files Not Present
 
@@ -240,6 +242,8 @@ python 02-data-structures-algorithms/arrays/day19-sliding-window-maximum.py
 python 02-data-structures-algorithms/arrays/test_day19_sliding_window_maximum.py
 python 02-data-structures-algorithms/strings/day20-minimum-window-substring.py
 python 02-data-structures-algorithms/strings/test_day20_minimum_window_substring.py
+python 02-data-structures-algorithms/heaps/day21-kth-largest-element.py
+python 02-data-structures-algorithms/heaps/test_day21_kth_largest_element.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

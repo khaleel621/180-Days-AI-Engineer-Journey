@@ -19,6 +19,7 @@ The Iris model evaluation script ran successfully in a verification session on 2
 6. Calculates test accuracy
 7. Prints the confusion matrix
 8. Prints the classification report (precision, recall, F1-score)
+9. Prints explicit per-class precision, recall, F1-score and support, plus simple English explanations of each metric
 
 ### Verification Status
 - Execution, test accuracy, confusion matrix, and classification report were verified in the 2026-10-23 session.
