@@ -23,6 +23,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 17: Encapsulation and Access Modifiers | `day17-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `get_balance()`; getters and setters with validation; `ValueError` for invalid amounts and insufficient funds. |
 | Day 19: OOP Abstraction | `day19-oop-abstraction.py` | Abstraction: abstract base class `Shape` with abstract method `area()` using `ABC` and `abstractmethod`; concrete `Rectangle` (length × width) and `Circle` (π × radius²); abstract class cannot be instantiated directly. |
 | Day 20: OOP Encapsulation | `day20-oop-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `display_balance()`; getters and setters with validation; prevents negative deposits and overdrafts. |
+| Day 22: Magic Methods (Dunder Methods) | `day22-magic-methods.py` | Magic methods: `__init__`, `__str__`, `__repr__`, `__len__`, `__eq__`; input validation; explains why `__add__` is not appropriate for a `Book` (`book1 + book2` has no clear meaning). |
 
 ## How to Run Each Exercise
 
@@ -63,6 +64,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day19_oop_abstraction.py` | `Shape`, `Rectangle`, `Circle` classes; abstract class cannot be instantiated; Rectangle area = 50; Circle area ≈ 78.54 | `python 01-python-fundamentals/test_day19_oop_abstraction.py` | Not yet run |
 | `test_day20_oop_encapsulation.py` | `BankAccount` class: public/protected/private attributes, deposit/withdraw validation, getters/setters | `python 01-python-fundamentals/test_day20_oop_encapsulation.py` | Passes |
 | `test_day21_class_and_static_methods.py` | `Student` class: instance/class/static methods, class variable, pass/fail static method | `python 01-python-fundamentals/test_day21_class_and_static_methods.py` | Passes |
+| `test_day22_magic_methods.py` | `Book` class: `__init__`, `__str__`, `__repr__`, `__len__`, `__eq__`; `__add__` explained as not appropriate for books; invalid-input handling | `python 01-python-fundamentals/test_day22_magic_methods.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -93,3 +95,4 @@ These exercises are planned for future practice but have not been started yet.
 - OOP Abstraction — implemented in Day 19 (`day19-oop-abstraction.py`); tests written. Learner practice is pending, so the day is not marked complete yet.
 - OOP Encapsulation — implemented in Day 20 (`day20-oop-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Class Methods and Static Methods — implemented in Day 21 (`day21-class-and-static-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- Magic Methods (Dunder Methods) — implemented in Day 22 (`day22-magic-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.

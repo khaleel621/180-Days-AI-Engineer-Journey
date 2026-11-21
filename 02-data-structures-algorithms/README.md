@@ -193,6 +193,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 | Minimum Window Substring tests | `strings/test_day20_minimum_window_substring.py` | Tests for `min_window()` covering normal case, no valid window, exact match, duplicate characters, empty input, and single-character input | Passes |
 | Kth Largest Element / Heap (Day 21) | `heaps/day21-kth-largest-element.py` | `find_kth_largest(nums, k)` using a min-heap of size k via `heapq`; handles duplicates, validates k; O(n log k) time, O(k) space | Files created; tests pass |
 | Kth Largest Element tests | `heaps/test_day21_kth_largest_element.py` | Tests for normal case, duplicates, K=1, K=len(nums), single element, invalid k | Passes |
+| Top K Frequent Elements (Day 22) | `heaps/day22-top-k-frequent-elements.py` | `top_k_frequent_sorting()` and `top_k_frequent_heap()`: dictionary frequency counting, sorting vs min-heap approaches, duplicate handling, invalid k validation; O(n + m log m) / O(n + m log k) time, O(m) (+ O(k)) space | Files created; tests pass |
+| Top K Frequent Elements tests | `heaps/test_day22_top_k_frequent_elements.py` | Tests for normal case, duplicates, equal frequency, negatives, single element, k=1, k=distinct, invalid k | Passes |
 
 ## Files Not Present
 
@@ -244,6 +246,8 @@ python 02-data-structures-algorithms/strings/day20-minimum-window-substring.py
 python 02-data-structures-algorithms/strings/test_day20_minimum_window_substring.py
 python 02-data-structures-algorithms/heaps/day21-kth-largest-element.py
 python 02-data-structures-algorithms/heaps/test_day21_kth_largest_element.py
+python 02-data-structures-algorithms/heaps/day22-top-k-frequent-elements.py
+python 02-data-structures-algorithms/heaps/test_day22_top_k_frequent_elements.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

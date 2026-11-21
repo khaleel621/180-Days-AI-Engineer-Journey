@@ -446,6 +446,31 @@
 - DSA Day 20 minimum window substring: Implementation and tests created and verified. **Learner practice pending.**
 - Python Day 21 class and static methods: Implementation and tests created and verified. **Learner practice pending.**
 - DSA Day 21 heap / kth largest element: Implementation and tests created and verified. **Learner practice pending.**
+- Python Day 22 magic methods (dunder methods): Implementation and tests created and verified. **Learner practice pending.**
+- DSA Day 22 top K frequent elements: Implementation and tests created and verified. **Learner practice pending.**
+## Day 22 — 2026-11-21: Python Magic Methods + DSA Top K Frequent Elements
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Magic Methods (Dunder Methods) | Completed — verified | `Book` class with `title`, `author`, `pages`; `__init__()` with input validation, `__str__()`, `__repr__()`, `__len__()`, `__eq__()`; `__add__()` explained as not appropriate for books (no clear meaning for `book1 + book2`). File: `01-python-fundamentals/day22-magic-methods.py`. Verified: `test_day22_magic_methods.py` passes (14 tests). |
+| Top K Frequent Elements | Completed — verified | `top_k_frequent_sorting()` and `top_k_frequent_heap()` in `02-data-structures-algorithms/heaps/day22-top-k-frequent-elements.py`; dictionary frequency counting, sorting vs heap approaches, duplicate handling, invalid k validation, time and space complexity. Verified: `test_day22_top_k_frequent_elements.py` passes (14 tests). |
+
+### Concepts Learned (Python)
+- [x] Magic/dunder methods: `__init__`, `__str__`, `__repr__`, `__len__`, `__eq__`, `__add__`
+- [x] Python calls magic methods behind built-ins (`print`, `len`, `==`, `+`)
+- [x] `__str__` for users vs `__repr__` for developers
+- [x] `__eq__` returning `NotImplemented` for unrelated types
+- [x] Input validation with `TypeError`/`ValueError`
+- [x] Why `__add__` is not appropriate for `Book` (no clear meaning)
+
+### Concepts Learned (DSA)
+- [x] Frequency counting with dictionaries
+- [x] Dictionary + sorting solution: O(n + m log m) time, O(m) space
+- [x] Heap-based solution with `heapq`: O(n + m log k) time, O(m) + O(k) space
+- [x] Duplicate handling; negative numbers as dictionary keys
+- [x] Validating k (integer, 1 <= k <= distinct count)
+- [x] Ties: any valid set of k elements is acceptable
+
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -459,8 +484,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 21 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 21 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 22 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 22 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
