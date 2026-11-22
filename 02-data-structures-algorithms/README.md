@@ -195,6 +195,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 | Kth Largest Element tests | `heaps/test_day21_kth_largest_element.py` | Tests for normal case, duplicates, K=1, K=len(nums), single element, invalid k | Passes |
 | Top K Frequent Elements (Day 22) | `heaps/day22-top-k-frequent-elements.py` | `top_k_frequent_sorting()` and `top_k_frequent_heap()`: dictionary frequency counting, sorting vs min-heap approaches, duplicate handling, invalid k validation; O(n + m log m) / O(n + m log k) time, O(m) (+ O(k)) space | Files created; tests pass |
 | Top K Frequent Elements tests | `heaps/test_day22_top_k_frequent_elements.py` | Tests for normal case, duplicates, equal frequency, negatives, single element, k=1, k=distinct, invalid k | Passes |
+| Binary Trees: Introduction and Traversals (Day 23) | `trees/day23-binary-tree-traversals.py` | Binary tree, root/parent/child/leaf nodes, height and depth, inorder/preorder/postorder traversals as separate functions, example tree with expected outputs, edge cases (empty tree, single node, larger tree) | Files created; tests pass |
+| Binary Trees tests (Day 23) | `trees/test_day23_binary_tree_traversals.py` | Tests for inorder, preorder and postorder traversals, empty tree, single-node tree, larger tree, height and depth | Passes |
 
 ## Files Not Present
 
@@ -248,6 +250,8 @@ python 02-data-structures-algorithms/heaps/day21-kth-largest-element.py
 python 02-data-structures-algorithms/heaps/test_day21_kth_largest_element.py
 python 02-data-structures-algorithms/heaps/day22-top-k-frequent-elements.py
 python 02-data-structures-algorithms/heaps/test_day22_top_k_frequent_elements.py
+python 02-data-structures-algorithms/trees/day23-binary-tree-traversals.py
+python 02-data-structures-algorithms/trees/test_day23_binary_tree_traversals.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.

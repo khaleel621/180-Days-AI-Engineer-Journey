@@ -24,6 +24,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 19: OOP Abstraction | `day19-oop-abstraction.py` | Abstraction: abstract base class `Shape` with abstract method `area()` using `ABC` and `abstractmethod`; concrete `Rectangle` (length × width) and `Circle` (π × radius²); abstract class cannot be instantiated directly. |
 | Day 20: OOP Encapsulation | `day20-oop-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `display_balance()`; getters and setters with validation; prevents negative deposits and overdrafts. |
 | Day 22: Magic Methods (Dunder Methods) | `day22-magic-methods.py` | Magic methods: `__init__`, `__str__`, `__repr__`, `__len__`, `__eq__`; input validation; explains why `__add__` is not appropriate for a `Book` (`book1 + book2` has no clear meaning). |
+| Day 23: OOP Composition | `day23-composition.py` | Composition ("has-a"): one class holds an object of another class as an attribute (Engine, Book, Address, Lamp/Fan); why to use it; inheritance vs composition; swapping parts at runtime; beginner-friendly comments, exercises and a `main()` demo. |
 
 ## How to Run Each Exercise
 
@@ -96,3 +97,4 @@ These exercises are planned for future practice but have not been started yet.
 - OOP Encapsulation — implemented in Day 20 (`day20-oop-encapsulation.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Class Methods and Static Methods — implemented in Day 21 (`day21-class-and-static-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Magic Methods (Dunder Methods) — implemented in Day 22 (`day22-magic-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- OOP Composition — implemented in Day 23 (`day23-composition.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.

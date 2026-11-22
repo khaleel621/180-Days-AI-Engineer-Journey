@@ -471,6 +471,29 @@
 - [x] Validating k (integer, 1 <= k <= distinct count)
 - [x] Ties: any valid set of k elements is acceptable
 
+## Day 23 — 2026-11-22: Python OOP Composition + DSA Binary Trees
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| OOP – Composition | Completed — verified | `01-python-fundamentals/day23-composition.py`: Engine/Car, Book/Library, Address/Student, Room/Lamp/Fan examples teaching composition ("has-a"), why to use it, inheritance vs composition, one class containing another object, and swapping parts at runtime. Includes beginner-friendly comments, exercises and a `main()` demo. Verified: `test_day23_composition.py` passes (16 tests). |
+| Binary Trees – Introduction and Traversals | Completed — verified | `02-data-structures-algorithms/trees/day23-binary-tree-traversals.py`: BinaryTreeNode, root/parent/child/leaf nodes, height and depth, inorder/preorder/postorder traversals as separate functions, example tree with expected outputs, edge cases (empty tree, single node, larger tree). Verified: `test_day23_binary_tree_traversals.py` passes (15 tests). |
+
+### Concepts Learned (Python)
+- [x] Composition: one class ("whole") holds an object of another class ("part") as an attribute ("has-a" relationship)
+- [x] Why use composition: code reuse, small focused classes, loose coupling, swappable parts at runtime
+- [x] Difference between inheritance ("is-a") and composition ("has-a")
+- [x] How one class can contain an object of another class (store it as self.<attribute> in __init__)
+- [x] Real-world examples: Car+Engine, Library+Book, Student+Address, Room+Lamp+Fan
+
+### Concepts Learned (DSA)
+- [x] Binary tree: each node has at most two children (left and right)
+- [x] Root, parent, child and leaf nodes
+- [x] Height and depth of a tree
+- [x] Inorder traversal (Left, Root, Right)
+- [x] Preorder traversal (Root, Left, Right)
+- [x] Postorder traversal (Left, Right, Root)
+- [x] Edge cases: empty tree, single-node tree, larger tree
+
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -484,8 +507,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 22 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 22 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 23 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 23 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |
