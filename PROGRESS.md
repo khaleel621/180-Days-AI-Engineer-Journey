@@ -494,6 +494,37 @@
 - [x] Postorder traversal (Left, Right, Root)
 - [x] Edge cases: empty tree, single-node tree, larger tree
 
+## Day 24 — 2026-11-23: Python Modules and Packages + DSA Binary Search Trees
+
+| Exercise | Status | Details |
+|----------|--------|---------|
+| Python: Modules and Packages | Implemented — verified | `01-python-fundamentals/day24-modules-and-packages.py`: teaches module/package concepts (import, from...import, as, __init__.py, module vs package, organizing a small project) with the `day24_shop/` package (`products.py`, `billing.py`, `receipt.py`, `__init__.py`). `billing.py` imports from `products.py` inside the same package. Beginner-friendly comments, real-world shop example, expected outputs, exercises, common mistakes. Verified: `test_day24_modules_and_packages.py` passes (17 tests). |
+| DSA: Binary Search Trees – Search and Insertion | Implemented — verified | `02-data-structures-algorithms/trees/day24-binary-search-tree.py`: `BSTNode` class, `insert()` with documented duplicate rule (left subtree), `search()` using ordering property, `inorder_traversal()` for sorted-order verification, example tree, edge cases (empty tree, single node, missing value, duplicates). Recursion and time complexity O(h) explained. Verified: `test_day24_binary_search_tree.py` passes (14 tests). |
+
+### Concepts Learned (Python)
+- [x] Module: a `.py` file with reusable variables, functions, classes
+- [x] Why use modules: reuse, organization, maintainability, collaboration
+- [x] `import module` — access functions with `module.function()`
+- [x] `from module import function` — import specific functions directly
+- [x] `from module import function as alias` — alias with `as`
+- [x] Package: folder of modules marked by `__init__.py`
+- [x] Module vs package difference
+- [x] `__init__.py` makes a folder a package and re-exports names
+- [x] Organizing a small project: `day24_shop/` package with modules importing from each other
+- [x] Common beginner mistakes: wrong folder, missing `__init__.py`, circular imports, `from module import *`, confusing module vs package
+
+### Concepts Learned (DSA)
+- [x] Binary Search Tree: binary tree with an ordering rule
+- [x] Binary tree vs BST: BST values are ordered; binary tree has no ordering rule
+- [x] BST ordering property: left subtree <= node.value < right subtree
+- [x] Search: skip one subtree each step; returns node or None
+- [x] Insert: follow search path; `insert(None, value)` creates single-node tree
+- [x] Recursion: each call handles one node, base case is None
+- [x] Time complexity: O(h); balanced = O(log n), skewed = O(n)
+- [x] Edge cases: empty tree, single node, missing value, duplicates
+- [x] Duplicate rule (documented): equal values go to the LEFT subtree
+- [x] Inorder traversal verifies sorted order
+
 - AI Journey Day 2 model evaluation: Script exists; execution blocked by missing scikit-learn in this environment. **Personal review pending.**
 
 ## Upcoming / Planned
@@ -507,8 +538,8 @@
 
 | Folder | Status |
 |--------|--------|
-| `01-python-fundamentals` | In Progress (Day 23 created; learner practice pending) |
-| `02-data-structures-algorithms` | In Progress (Day 23 created; learner practice pending) |
+| `01-python-fundamentals` | In Progress (Day 24 created; learner practice pending) |
+| `02-data-structures-algorithms` | In Progress (Day 24 created; learner practice pending) |
 | `03-machine-learning` | In Progress |
 | `04-deep-learning` | Not Started |
 | `05-generative-ai` | Not Started |

@@ -25,6 +25,7 @@ Algorithm-focused problems (for example Two Sum, array counting) belong in `../0
 | Day 20: OOP Encapsulation | `day20-oop-encapsulation.py` | Encapsulation: public `account_holder_name`, protected `_account_number`, private `__balance`; `deposit()`, `withdraw()`, `display_balance()`; getters and setters with validation; prevents negative deposits and overdrafts. |
 | Day 22: Magic Methods (Dunder Methods) | `day22-magic-methods.py` | Magic methods: `__init__`, `__str__`, `__repr__`, `__len__`, `__eq__`; input validation; explains why `__add__` is not appropriate for a `Book` (`book1 + book2` has no clear meaning). |
 | Day 23: OOP Composition | `day23-composition.py` | Composition ("has-a"): one class holds an object of another class as an attribute (Engine, Book, Address, Lamp/Fan); why to use it; inheritance vs composition; swapping parts at runtime; beginner-friendly comments, exercises and a `main()` demo. |
+| Day 24: Modules and Packages | `day24-modules-and-packages.py` (plus package `day24_shop/`) | Modules and packages: what a module/package is, `import`, `from ... import`, `... as`, `__init__.py`, module vs package, organizing a small project. `day24_shop/` package with `products.py`, `billing.py`, `receipt.py`; `billing.py` imports from `products.py`. Beginner-friendly comments, real-world shop example, expected outputs, exercises and common mistakes. |
 
 ## How to Run Each Exercise
 
@@ -66,6 +67,7 @@ Tests live beside the exercises they cover and run directly with Python:
 | `test_day20_oop_encapsulation.py` | `BankAccount` class: public/protected/private attributes, deposit/withdraw validation, getters/setters | `python 01-python-fundamentals/test_day20_oop_encapsulation.py` | Passes |
 | `test_day21_class_and_static_methods.py` | `Student` class: instance/class/static methods, class variable, pass/fail static method | `python 01-python-fundamentals/test_day21_class_and_static_methods.py` | Passes |
 | `test_day22_magic_methods.py` | `Book` class: `__init__`, `__str__`, `__repr__`, `__len__`, `__eq__`; `__add__` explained as not appropriate for books; invalid-input handling | `python 01-python-fundamentals/test_day22_magic_methods.py` | Passes |
+| `test_day24_modules_and_packages.py` | `day24_shop` package: import styles, package structure, `calculate_total`, `apply_discount`, `format_receipt`, `get_product`, `list_products` | `python 01-python-fundamentals/test_day24_modules_and_packages.py` | Passes |
 
 ## Python Syntax Practice vs DSA Practice
 
@@ -98,3 +100,4 @@ These exercises are planned for future practice but have not been started yet.
 - Class Methods and Static Methods — implemented in Day 21 (`day21-class-and-static-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - Magic Methods (Dunder Methods) — implemented in Day 22 (`day22-magic-methods.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
 - OOP Composition — implemented in Day 23 (`day23-composition.py`); tests pass. Learner practice is pending, so the day is not marked complete yet.
+- Modules and Packages — implemented in Day 24 (`day24-modules-and-packages.py` with package `day24_shop/`); tests pass (17 tests). Learner practice is pending, so the day is not marked complete yet.

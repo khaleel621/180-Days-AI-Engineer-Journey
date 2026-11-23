@@ -197,6 +197,8 @@ Verified: all 11 tests in `stacks/test_day15_next_greater_element.py` pass.
 | Top K Frequent Elements tests | `heaps/test_day22_top_k_frequent_elements.py` | Tests for normal case, duplicates, equal frequency, negatives, single element, k=1, k=distinct, invalid k | Passes |
 | Binary Trees: Introduction and Traversals (Day 23) | `trees/day23-binary-tree-traversals.py` | Binary tree, root/parent/child/leaf nodes, height and depth, inorder/preorder/postorder traversals as separate functions, example tree with expected outputs, edge cases (empty tree, single node, larger tree) | Files created; tests pass |
 | Binary Trees tests (Day 23) | `trees/test_day23_binary_tree_traversals.py` | Tests for inorder, preorder and postorder traversals, empty tree, single-node tree, larger tree, height and depth | Passes |
+| Binary Search Trees: Search and Insertion (Day 24) | `trees/day24-binary-search-tree.py` | BST node, ordering property, `insert()`, `search()`, inorder traversal, recursion, time complexity O(h), duplicate rule (left subtree), edge cases (empty tree, single node, missing value, duplicates) | Files created; tests pass |
+| Binary Search Trees tests (Day 24) | `trees/test_day24_binary_search_tree.py` | Tests for insert multiple values, search existing/missing, empty BST, duplicates, inorder sorted order | Passes |
 
 ## Files Not Present
 
@@ -252,6 +254,8 @@ python 02-data-structures-algorithms/heaps/day22-top-k-frequent-elements.py
 python 02-data-structures-algorithms/heaps/test_day22_top_k_frequent_elements.py
 python 02-data-structures-algorithms/trees/day23-binary-tree-traversals.py
 python 02-data-structures-algorithms/trees/test_day23_binary_tree_traversals.py
+python 02-data-structures-algorithms/trees/day24-binary-search-tree.py
+python 02-data-structures-algorithms/trees/test_day24_binary_search_tree.py
 ```
 
 `day_02-even-odd.py` reads input from the keyboard; run it in an interactive terminal.
